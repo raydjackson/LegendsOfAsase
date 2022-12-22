@@ -14,6 +14,9 @@ public class Element : MonoBehaviour
     [SerializeField]
     protected Color elementColor = Color.white;
     public Color ElementColor { get { return elementColor; } }
+    [SerializeField]
+    protected Sprite elementIcon;
+    public Sprite ElementIcon { get { return elementIcon; } }
 
 
     public bool IsWeakness(Element attack)

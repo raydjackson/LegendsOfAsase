@@ -50,3 +50,4 @@ MonoBehaviour:
   - {fileID: 6146148462128879484, guid: 253b98450edd6cd449163d7ba7dea932, type: 3}
   elementName: Energy
   elementColor: {r: 1, g: 0.53394973, b: 0, a: 1}
+  elementIcon: {fileID: 90310034, guid: 69bd40689b7883b4386fee5f1776fa07, type: 3}

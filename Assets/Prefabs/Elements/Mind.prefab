@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 5139934155634899266, guid: d0be186f289443143899933d2701fe15, type: 3}
   elementName: Mind
   elementColor: {r: 1, g: 0.3443396, b: 0.71459484, a: 1}
+  elementIcon: {fileID: 544750635, guid: 8c62bffd7727bde48b43b29d24f3af7f, type: 3}

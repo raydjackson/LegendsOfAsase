@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3418669914528406373}
   - component: {fileID: 1220222684450881408}
+  - component: {fileID: 464219795813111589}
   m_Layer: 0
   m_Name: Denzion, the Defender
   m_TagString: Untagged
@@ -48,3 +49,17 @@ MonoBehaviour:
   elements:
   - {fileID: 3407226575728773204, guid: f74916af7f05f9f45b495537efb45575, type: 3}
   speed: 4
+--- !u!114 &464219795813111589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418669914528406372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e747b9505f647074789c2352956adf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5
+  maximumHealth: 5

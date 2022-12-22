@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
   elementName: Spirit
   elementColor: {r: 0.58433104, g: 0, b: 1, a: 1}
+  elementIcon: {fileID: -1716417082, guid: 806baf5433202f242ad097a7c94f2337, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3418669914528406373}
   - component: {fileID: 1220222684450881408}
+  - component: {fileID: 2980300423806676272}
   m_Layer: 0
   m_Name: Arrik, the Guard
   m_TagString: Untagged
@@ -49,3 +50,17 @@ MonoBehaviour:
   - {fileID: 2760340808501925602, guid: 7891079f2ac5cd140a1136c98676f1d6, type: 3}
   - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
   speed: 3
+--- !u!114 &2980300423806676272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418669914528406372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e747b9505f647074789c2352956adf90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5
+  maximumHealth: 5

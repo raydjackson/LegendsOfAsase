@@ -52,3 +52,4 @@ MonoBehaviour:
   - {fileID: 5522922400728800796, guid: de2e55f267ab4f44da3948aded1fa871, type: 3}
   elementName: Nature
   elementColor: {r: 0, g: 1, b: 0.11251116, a: 1}
+  elementIcon: {fileID: 1806820660, guid: 69bd40689b7883b4386fee5f1776fa07, type: 3}

@@ -1,0 +1,2325 @@
+fileFormatVersion: 2
+guid: 69bd40689b7883b4386fee5f1776fa07
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icons set 2-01_0
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21edfe2cb799dc24fb4b5211f34d607a
+      internalID: 965224389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_1
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c97480f401997749b46901d9e5b32b0
+      internalID: 1323058891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_2
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d362e59c562d664c8f5f62b08d75e53
+      internalID: 1566869787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_3
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b553a3ef842aabd488052a48fbaa872f
+      internalID: -1813350088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_4
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 3798
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91eae36e4cedd1489429fbf885aadcd
+      internalID: 1120856485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_5
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7205c6cad4ae4da4d8525bb36df6bc58
+      internalID: 1149406401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_6
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 3798
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1d63a77126374458c314e693fe6bc1
+      internalID: -1166316736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_7
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3798
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ced2f358000d447a307e614a5f49b9
+      internalID: 1255437443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_8
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 3798
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a556bb46b80f043b9336df08c1fdf4
+      internalID: -1070929047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4865f65621ad6cb46a4259e824b6e349
+      internalID: 292858986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_10
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51648cc5f39056e43a2d6637355f8732
+      internalID: -231394782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_11
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c8730aed5b3bb478199eb76f8cef34
+      internalID: 1873720819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_12
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2032f1c0a4328d247b5003948784209c
+      internalID: 510725763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_13
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 3431
+        width: 239
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71f13d4b9c2f3b4cb5e8eef2ddcfc2e
+      internalID: -202547783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_14
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09008818c5991854cbaafbc475b100a1
+      internalID: -185227017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_15
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 3431
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f5f16ea98dcb84398b2d6afe649bed
+      internalID: 2137885172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_16
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3431
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887b7a8ac1b46c4dad4758d629f7bd5
+      internalID: 1425357671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_17
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 3431
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b09235d55a3104e8f225bf24536be8
+      internalID: -1233799747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc399a3a9af48148a33e79aa4f5f1ca
+      internalID: -2115353982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_19
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1b844b24b369d45918fc972384253f
+      internalID: -167893457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_20
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2ac1d9df003f541ac7969cc8e75345
+      internalID: 214492025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_21
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e700dae4bcbdb468f9720a2eda88fe
+      internalID: -29080118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_22
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 3065
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd67efe0f4198041a0f089938e27c0d
+      internalID: 1477352208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_23
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ece6176c412886479adcc90a04cdeec
+      internalID: -24920590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_24
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 3065
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157c3f7a9f454054fa18fdbc6ea57f26
+      internalID: -1392720615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_25
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3065
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110e8b2d14a5d3042840d3319ad6ca11
+      internalID: -428336705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_26
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 3065
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ed54543ecf75149841ae4cffc72809
+      internalID: 1073541750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_27
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66294f45eac9a7c468ac77ecad413893
+      internalID: -1666343532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_28
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e49880a15161504f8528b84630d3f1e
+      internalID: -1105880277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_29
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8464e79667e145b4aad53ad13f650150
+      internalID: 1865470223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_30
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b2efda55ab21748ae6b340b999a0a8
+      internalID: 729994456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_31
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2697
+        width: 239
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582d0a6597fc83c45a4ea617de7abafb
+      internalID: 1806820660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_32
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782d89a365dfc3245a85ebd6952dfd38
+      internalID: -1961649851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_33
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 2697
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836799aeb5a88394db8854956e1eddba
+      internalID: -796143052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_34
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 2697
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3c8063b34c3b34f8f7c6558466cee7
+      internalID: 1403510268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_35
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 2697
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfdeece79f73344cb337931088957d1
+      internalID: -1266568961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366c3aa6b69270b4e9c730d850217dea
+      internalID: -44271361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_37
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09abfe156e8c1cd4a8eda378f2a981b2
+      internalID: -557662709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_38
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9a76c8705a74f40b7b385437125d90
+      internalID: -434124168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_39
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22692d9901231041aab987afff5ff77
+      internalID: 2072633084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_40
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2331
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6525c6d5a7d6f459326ade97fbfe2f
+      internalID: 1221205687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_41
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dacb54b624b544d982e9294fe882bb
+      internalID: -399938652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_42
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 2331
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a659423d5f6703344a04a36b481950f8
+      internalID: -1983206585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_43
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 2331
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a5bf1839c6ba2448c946d0051f8ef0
+      internalID: -213350493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_44
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 2331
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439e369e0281d364d80048c59b66b831
+      internalID: 753803228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_45
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2991f5736ae634dbe05fb665fda258
+      internalID: -1821244313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_46
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9fefa332175b843809480197099aa5
+      internalID: 90310034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_47
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376137fe89b45cc4aacff2f106bdd58e
+      internalID: 367290741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_48
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d2345d03b37d64381d9cf1e25996a4
+      internalID: 1841414474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_49
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1964
+        width: 239
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce5aeb37badbc546ae3d3262638f093
+      internalID: -301537453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_50
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db8512f0dab9114a825e0f757fbba73
+      internalID: -587026109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_51
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1964
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef104c591d6468a46a1d431edd57f0e8
+      internalID: -439425452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_52
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1964
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af09b2a1db575840aeebcc73b515c54
+      internalID: 1765105072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_53
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1964
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f0031bfeb23214c8b2f015c3bab8e9
+      internalID: -1756479320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_54
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc58e91edc82e6942bd3de5571ad7aad
+      internalID: 226360377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_55
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3395cde3f7772c4194c858d3b404bcb
+      internalID: -261326647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_56
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5434f75a4eeb6944afb7073afafc664
+      internalID: -1446668202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_57
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ff8f1ab8a5bf74983d6bed99fd0d82
+      internalID: -57983563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_58
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59ab045a53a42b44b19094a69c6d39c
+      internalID: 494576622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_59
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d43dd5e84b9cb4ea0a60120ab7dd5e
+      internalID: 1034435500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_60
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1598
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af160392e8de1fa498280a395a0e2cc9
+      internalID: -1298500892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_61
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1598
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1237f3cb84d80df47bb1fab00892ce06
+      internalID: -185419874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_62
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1598
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a20f694f7c2174f95679269c8e4197
+      internalID: 1194264895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_63
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5324dd88de81304087489d6a9a42758
+      internalID: -77079149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_64
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9340514a0f82d2d4dba9c8e5866b0622
+      internalID: -1556938284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_65
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad74befc1c2b5d44cb0188e3059d603f
+      internalID: 579633375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_66
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4b7c26971a31c4086def7fa8e929f5
+      internalID: 75252619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_67
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1232
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e962628fae00cc4fa5aadda4efe20de
+      internalID: -310495669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_68
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbc47e98c9a4084f81a6acfbf9716c4
+      internalID: 117666387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_69
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1232
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240a7f1a505150040a4fb507fa6b92b7
+      internalID: 1370515576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_70
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1232
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f480ffd646d9d4b96c10f39e0f9a3d
+      internalID: -425217178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_71
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 1232
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b92e2100870a42a9b4ecfa53bd85d
+      internalID: -1948512848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_72
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd028b2ab6a10e34eacef4da65abee7a
+      internalID: -2085237785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_73
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445e42ef644feb34983e6932f5f8e40d
+      internalID: -1742955528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_74
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c552645cbbc5a5418e942cf03afe50c
+      internalID: 2006164901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_75
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2763e3de3db052d42af0f3f5dc4ce21b
+      internalID: 719848310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_76
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 866
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfc888d1e12b5b4aa2d8a085ed91709
+      internalID: -148694752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_77
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3391146f6f79e24bb9e8c34ac3e5a30
+      internalID: -133895738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_78
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 866
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f5c80c4a1172941b58961f45212ee6
+      internalID: -1063777375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_79
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 866
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddc0f2474c3f3644981dd9a78ec0152
+      internalID: 661854803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_80
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 866
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc89395867ff214cb36925a8524683d
+      internalID: 806927495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_81
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7643327b7a21c78419ab073f4ccd67eb
+      internalID: 359239325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_82
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9604c3428ffd4d84d92b934e1eff1af2
+      internalID: -853933659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_83
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6668ade31a37ccf41bee459548c51458
+      internalID: -1852282290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_84
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9355f1b3c012d9f4d82ad51513797c28
+      internalID: -295139511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_85
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 497
+        width: 239
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9264b7136d549bc41bd611a52b6ec5b9
+      internalID: -500311572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_86
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d83b93ffc119b4eb73258c8910de54
+      internalID: 433181100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_87
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 497
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b1c9e44b6e2ec47bec98034873f9c1
+      internalID: -1846405940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_88
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 497
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af3a21a5d06b224f978a7f00580900b
+      internalID: 240702522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_89
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 497
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e28c7d694785254cb78ea33f0f2b6b8
+      internalID: 1868318670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_90
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751848945c21275498ce6e0fe984343b
+      internalID: -1969882803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_91
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ab6b5ec76ba45428d69b32594abe03
+      internalID: -1733762321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_92
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1890e6e8910955148a4ed174c9bee0d9
+      internalID: -651670240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_93
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa66c6c9747a8184eb0483fc4b98c2d5
+      internalID: -1479993817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_94
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 131
+        width: 239
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecb303f6c7fc2544939ec994c1edd87
+      internalID: 31734902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_95
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd981b88f4a91648bec6f94dbf3c11f
+      internalID: -263831231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_96
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 131
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6565978df455f174eb84a03a7862e914
+      internalID: -1736894848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_97
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 131
+        width: 240
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8caf9e97f65e4604aa207f647a7ea728
+      internalID: -360659750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons set 2-01_98
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 131
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9ba36429d635942bf23c8215fd4f2f
+      internalID: -1021144839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      icons set 2-01_76: -148694752
+      icons set 2-01_74: 2006164901
+      icons set 2-01_36: -44271361
+      icons set 2-01_78: -1063777375
+      icons set 2-01_75: 719848310
+      icons set 2-01_98: -1021144839
+      icons set 2-01_1: 1323058891
+      icons set 2-01_14: -185227017
+      icons set 2-01_30: 729994456
+      icons set 2-01_26: 1073541750
+      icons set 2-01_79: 661854803
+      icons set 2-01_90: -1969882803
+      icons set 2-01_38: -434124168
+      icons set 2-01_28: -1105880277
+      icons set 2-01_27: -1666343532
+      icons set 2-01_21: -29080118
+      icons set 2-01_72: -2085237785
+      icons set 2-01_86: 433181100
+      icons set 2-01_42: -1983206585
+      icons set 2-01_19: -167893457
+      icons set 2-01_41: -399938652
+      icons set 2-01_52: 1765105072
+      icons set 2-01_95: -263831231
+      icons set 2-01_68: 117666387
+      icons set 2-01_7: 1255437443
+      icons set 2-01_43: -213350493
+      icons set 2-01_56: -1446668202
+      icons set 2-01_57: -57983563
+      icons set 2-01_11: 1873720819
+      icons set 2-01_23: -24920590
+      icons set 2-01_96: -1736894848
+      icons set 2-01_54: 226360377
+      icons set 2-01_24: -1392720615
+      icons set 2-01_81: 359239325
+      icons set 2-01_70: -425217178
+      icons set 2-01_89: 1868318670
+      icons set 2-01_61: -185419874
+      icons set 2-01_87: -1846405940
+      icons set 2-01_63: -77079149
+      icons set 2-01_73: -1742955528
+      icons set 2-01_94: 31734902
+      icons set 2-01_84: -295139511
+      icons set 2-01_6: -1166316736
+      icons set 2-01_62: 1194264895
+      icons set 2-01_83: -1852282290
+      icons set 2-01_15: 2137885172
+      icons set 2-01_8: -1070929047
+      icons set 2-01_35: -1266568961
+      icons set 2-01_34: 1403510268
+      icons set 2-01_16: 1425357671
+      icons set 2-01_12: 510725763
+      icons set 2-01_20: 214492025
+      icons set 2-01_13: -202547783
+      icons set 2-01_29: 1865470223
+      icons set 2-01_92: -651670240
+      icons set 2-01_50: -587026109
+      icons set 2-01_67: -310495669
+      icons set 2-01_85: -500311572
+      icons set 2-01_0: 965224389
+      icons set 2-01_46: 90310034
+      icons set 2-01_65: 579633375
+      icons set 2-01_22: 1477352208
+      icons set 2-01_31: 1806820660
+      icons set 2-01_49: -301537453
+      icons set 2-01_58: 494576622
+      icons set 2-01_48: 1841414474
+      icons set 2-01_60: -1298500892
+      icons set 2-01_55: -261326647
+      icons set 2-01_51: -439425452
+      icons set 2-01_18: -2115353982
+      icons set 2-01_4: 1120856485
+      icons set 2-01_93: -1479993817
+      icons set 2-01_17: -1233799747
+      icons set 2-01_69: 1370515576
+      icons set 2-01_59: 1034435500
+      icons set 2-01_71: -1948512848
+      icons set 2-01_2: 1566869787
+      icons set 2-01_9: 292858986
+      icons set 2-01_37: -557662709
+      icons set 2-01_66: 75252619
+      icons set 2-01_3: -1813350088
+      icons set 2-01_44: 753803228
+      icons set 2-01_77: -133895738
+      icons set 2-01_45: -1821244313
+      icons set 2-01_32: -1961649851
+      icons set 2-01_53: -1756479320
+      icons set 2-01_40: 1221205687
+      icons set 2-01_5: 1149406401
+      icons set 2-01_88: 240702522
+      icons set 2-01_91: -1733762321
+      icons set 2-01_39: 2072633084
+      icons set 2-01_33: -796143052
+      icons set 2-01_82: -853933659
+      icons set 2-01_80: 806927495
+      icons set 2-01_25: -428336705
+      icons set 2-01_97: -360659750
+      icons set 2-01_47: 367290741
+      icons set 2-01_10: -231394782
+      icons set 2-01_64: -1556938284
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -50,3 +50,4 @@ MonoBehaviour:
   - {fileID: 6207169951584201712, guid: 638510378107a1f4f8412ab4be7fae1b, type: 3}
   elementName: Ranged
   elementColor: {r: 1, g: 0.91517913, b: 0, a: 1}
+  elementIcon: {fileID: 661854803, guid: 69bd40689b7883b4386fee5f1776fa07, type: 3}

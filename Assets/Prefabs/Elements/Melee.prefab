@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 3407226575728773204, guid: f74916af7f05f9f45b495537efb45575, type: 3}
   elementName: Melee
   elementColor: {r: 1, g: 0, b: 0, a: 1}
+  elementIcon: {fileID: -1742955528, guid: 69bd40689b7883b4386fee5f1776fa07, type: 3}

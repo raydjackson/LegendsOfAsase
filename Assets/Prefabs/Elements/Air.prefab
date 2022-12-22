@@ -52,3 +52,4 @@ MonoBehaviour:
   - {fileID: 9202899056394054234, guid: 1082f92b33252b04788a87b7c529d217, type: 3}
   elementName: Air
   elementColor: {r: 0.2783019, g: 0.8677514, b: 1, a: 1}
+  elementIcon: {fileID: 1532266029, guid: 8c62bffd7727bde48b43b29d24f3af7f, type: 3}

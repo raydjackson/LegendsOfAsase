@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7041917822027880504}
   - component: {fileID: 7041917822027880486}
   - component: {fileID: 7041917822027880487}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Element2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 7041917822124332888}
   - component: {fileID: 7041917822124332870}
   - component: {fileID: 7041917822124332871}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 7041917822463244212}
   - component: {fileID: 7041917822463244213}
   - component: {fileID: 7041917822463244214}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7041917822710707514}
   - component: {fileID: 7041917822710707513}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Elements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 7041917822733511741}
   - component: {fileID: 7041917822733511739}
   - component: {fileID: 7041917822733511740}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 7041917822812915982}
   - component: {fileID: 7041917822812915980}
   - component: {fileID: 7041917822812915981}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Element1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,9 @@ GameObject:
   - component: {fileID: 7041917823210313677}
   - component: {fileID: 7041917823210313678}
   - component: {fileID: 7041917823210313676}
-  m_Layer: 0
+  - component: {fileID: 1875340063218364327}
+  - component: {fileID: 4639534782243323207}
+  m_Layer: 3
   m_Name: BasicPlaycard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,6 +638,53 @@ MonoBehaviour:
   elementOne: {fileID: 7041917822812915981}
   elementTwo: {fileID: 7041917822027880487}
   legend: {fileID: 0}
+--- !u!50 &1875340063218364327
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041917823210313679}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &4639534782243323207
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041917823210313679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7041917823264588577
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +696,7 @@ GameObject:
   - component: {fileID: 7041917823264588576}
   - component: {fileID: 7041917823264588590}
   - component: {fileID: 7041917823264588591}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LegendName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7041917823806605423}
   - component: {fileID: 7041917823806605422}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}

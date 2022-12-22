@@ -9,10 +9,20 @@ public class ElementChart : MonoBehaviour
     private Element[] elementPrefabs = new Element[8];
 
     public static ElementChart instance { get; private set; }
+    public Dictionary<string, Element> elementDatabase = new Dictionary<string, Element>();
 
     private void Awake()
     {
         instance = this;
+        PopulateElementDatabase();
+    }
+
+    private void PopulateElementDatabase()
+    {
+        foreach (Element e in elementPrefabs)
+        {
+            elementDatabase.Add(e.ElementName, e);
+        }
     }
 
     public DamageType DetermineWeaknessAndResistance(Element attackingElement, Legend defendingLegend)

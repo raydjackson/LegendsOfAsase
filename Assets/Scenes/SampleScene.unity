@@ -388,6 +388,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7041917823210313676, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
+      propertyPath: legend
+      value: 
+      objectReference: {fileID: 1220222684450881408, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
     - target: {fileID: 7041917823210313677, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -565,6 +569,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6818081461686121620, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
+      propertyPath: legend
+      value: 
+      objectReference: {fileID: 1220222684450881408, guid: c86781ab29c2aef4288f45467b46ac3b, type: 3}
     - target: {fileID: 6818081461686121621, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
       propertyPath: m_Name
       value: ActivePlaycard (1)
@@ -800,7 +808,7 @@ PrefabInstance:
     - target: {fileID: 7041917823210313676, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: legend
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1220222684450881408, guid: c86781ab29c2aef4288f45467b46ac3b, type: 3}
     - target: {fileID: 7041917823210313677, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -988,6 +996,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7041917823210313676, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
+      propertyPath: legend
+      value: 
+      objectReference: {fileID: 4792304358206457257, guid: f86eae5ac788d3645a551407427003d9, type: 3}
     - target: {fileID: 7041917823210313677, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1161,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 7041917823210313676, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: legend
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4792304358206457257, guid: f86eae5ac788d3645a551407427003d9, type: 3}
     - target: {fileID: 7041917823210313677, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1387,7 +1399,7 @@ PrefabInstance:
     - target: {fileID: 6818081461686121620, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
       propertyPath: legend
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1220222684450881408, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
     - target: {fileID: 6818081461686121621, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
       propertyPath: m_Name
       value: ActivePlaycard

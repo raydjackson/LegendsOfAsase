@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5817224441743276701}
   - component: {fileID: 5817224441743276700}
   - component: {fileID: 5817224441743276703}
+  - component: {fileID: 2974364686812985458}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,6 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bca4efaafa664b499a3e2e5abdf177c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basicPlaycard: {fileID: 7041917823210313679, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
+  activePlaycard: {fileID: 6818081461686121621, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
+  selectedPlaycard: {fileID: 0}
+  fieldLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &5817224441743276703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,3 +73,89 @@ MonoBehaviour:
   - {fileID: 9202899056394054234, guid: 1082f92b33252b04788a87b7c529d217, type: 3}
   - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
   - {fileID: 6146148462128879484, guid: 253b98450edd6cd449163d7ba7dea932, type: 3}
+--- !u!114 &2974364686812985458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817224441743276702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: b6619b3663b9a8b40951a9d88896cc28, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_ActionId: 0d73f43b-0c16-4291-ad16-0f07f16c3e4b
+    m_ActionName: Player/Fire[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6f3d418f-5fbc-41da-b1c1-8195da2f2989
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 92d23422-646a-490e-af19-b565d078f037
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fb5397c8-0e6e-4707-8cbe-d16c5d89c5fa
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9b221daa-d8a8-4267-bfd4-90eeac847ff5
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e0110729-edaa-47ba-83ca-b266cf1e47ab
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0b40eed0-79ef-497b-b48a-9d4356d15fd8
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fddf1ab3-03c8-4488-af9f-72f1efe5c7a1
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ad84132f-ce2e-4035-93cc-b7c5300352e9
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 110fd05d-230d-4480-b0e0-ce886e8d7654
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 321e719e-7476-40a6-91d2-c536d2a31d8d
+    m_ActionName: UI/TrackedDeviceOrientation
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

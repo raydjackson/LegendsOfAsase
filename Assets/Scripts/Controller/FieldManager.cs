@@ -35,8 +35,8 @@ public class FieldManager : MonoBehaviour
 
     private void Start()
     {
-        Playcard pC = Instantiate(basicPlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC2 = Instantiate(basicPlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC = Instantiate(activePlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC2 = Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         //Playcard pC3 = Instantiate(basicPlaycard, withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         pC.legend = GameManager.instance.availableLegends[0];
         pC2.legend = GameManager.instance.availableLegends[1];

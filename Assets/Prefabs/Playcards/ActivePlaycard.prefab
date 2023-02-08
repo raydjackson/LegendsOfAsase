@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 7292054866547659004}
   m_Layer: 3
   m_Name: ActivePlaycard
-  m_TagString: Untagged
+  m_TagString: Playcard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

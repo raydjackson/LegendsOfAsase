@@ -51,6 +51,11 @@ public class FieldManager : MonoBehaviour
 
     private void Start()
     {
+
+    }
+
+    public void CreateTestPlaycards()
+    {
         Playcard pC1 = Instantiate(activePlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC2 = Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         //Playcard pC3 = Instantiate(basicPlaycard, supportLeftPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Legend[] availableLegends;
     public Playcard selectedPlaycard = null;
     public LayerMask fieldLayer;
+    public TMPro.TMP_Text stateIndicator;
 
     private void Awake()
     {
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        gameObject.AddComponent<GameStateMachine>();
     }
 
     void Update()

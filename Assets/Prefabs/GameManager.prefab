@@ -56,6 +56,7 @@ MonoBehaviour:
   fieldLayer:
     serializedVersion: 2
     m_Bits: 8
+  stateIndicator: {fileID: 0}
 --- !u!114 &5817224441743276703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +104,18 @@ MonoBehaviour:
   withdrawOnePlayerTwo: {fileID: 0}
   withdrawTwoPlayerTwo: {fileID: 0}
   withdrawThreePlayerTwo: {fileID: 0}
+  p1ActiveLegend: {fileID: 0}
+  p1SupportLeftLegend: {fileID: 0}
+  p1SupportRightLegend: {fileID: 0}
+  p1WithdrawOneLegend: {fileID: 0}
+  p1WithdrawTwoLegend: {fileID: 0}
+  p1WithdrawThreeLegend: {fileID: 0}
+  p2ActiveLegend: {fileID: 0}
+  p2SupportLeftLegend: {fileID: 0}
+  p2SupportRightLegend: {fileID: 0}
+  p2WithdrawOneLegend: {fileID: 0}
+  p2WithdrawTwoLegend: {fileID: 0}
+  p2WithdrawThreeLegend: {fileID: 0}
 --- !u!114 &1350765137
 MonoBehaviour:
   m_ObjectHideFlags: 0

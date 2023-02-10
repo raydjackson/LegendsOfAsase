@@ -54,8 +54,16 @@ public class ActionPanelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void ShowActionPanels()
+    {
+        attackPanel.SetActive(true);
+        switchPanel.SetActive(true);
+        techniquePanel.SetActive(true);
         UpdateAttackPanel(FieldManager.instance.p1ActiveLegend);
-        attackElements[0].onClick.AddListener(delegate { AttackWith(attackElementTexts[0].text); });
+        //UpdateTechniquePanel
     }
 
     public void UpdateAttackPanel(Legend activeLegend)
@@ -77,6 +85,21 @@ public class ActionPanelManager : MonoBehaviour
                 attackElementTexts[i].text = actLegElements[i].ElementName;
             }
         }
+    }
+
+    public void AddAttackButtonListeners()
+    {
+        attackElements[0].onClick.AddListener(delegate { AttackWith(attackElementTexts[0].text); });
+        if (attackElements[1].isActiveAndEnabled)
+        {
+            attackElements[1].onClick.AddListener(delegate { AttackWith(attackElementTexts[1].text); });
+        }
+    }
+
+    public void RemoveAttackButtonListeners()
+    {
+        attackElements[0].onClick.RemoveAllListeners();
+        attackElements[1].onClick.RemoveAllListeners();
     }
 
     public void AttackWith(string elementName)

@@ -8,6 +8,7 @@ public class ActionPanelManager : MonoBehaviour
 {
     public static ActionPanelManager instance { get; private set; }
 
+    #region Panel References
     public GameObject instructionPanel;
     public TMP_Text instructionsText;
 
@@ -41,32 +42,40 @@ public class ActionPanelManager : MonoBehaviour
     public GameObject withdrawPanel;
     //buttons for withdraw options
     public Button withdrawBackButton;
-
+    #endregion
 
     private void Awake()
     {
         instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    #region Action Panel Methods
     public void ShowActionPanels()
     {
         attackPanel.SetActive(true);
         switchPanel.SetActive(true);
         techniquePanel.SetActive(true);
-        UpdateAttackPanel(FieldManager.instance.p1ActiveLegend);
-        //UpdateTechniquePanel
+    }
+
+    public void HideActionPanels()
+    {
+        attackPanel.SetActive(false);
+        switchPanel.SetActive(false);
+        techniquePanel.SetActive(false);
+    }
+    #endregion
+
+    #region Attack Option Methods
+    public void ShowAttackOptionPanel()
+    {
+        attackOptionsPanel.SetActive(true);
+        attackBackButton.gameObject.SetActive(true);
+    }
+
+    public void HideAttackOptionPanel()
+    {
+        attackOptionsPanel.SetActive(false);
+        attackBackButton.gameObject.SetActive(false);
     }
 
     public void UpdateAttackPanel(Legend activeLegend)
@@ -75,7 +84,7 @@ public class ActionPanelManager : MonoBehaviour
 
         for (int i = 0; i < attackElements.Length; i++)
         {
-            if (i==1 && attackElements.Length > actLegElements.Length)
+            if (i == 1 && attackElements.Length > actLegElements.Length)
             {
                 attackElements[i].gameObject.SetActive(false);
                 continue;
@@ -89,24 +98,5 @@ public class ActionPanelManager : MonoBehaviour
             }
         }
     }
-
-    public void AddAttackButtonListeners()
-    {
-        attackElements[0].onClick.AddListener(delegate { AttackWith(attackElementTexts[0].text); });
-        if (attackElements[1].isActiveAndEnabled)
-        {
-            attackElements[1].onClick.AddListener(delegate { AttackWith(attackElementTexts[1].text); });
-        }
-    }
-
-    public void RemoveAttackButtonListeners()
-    {
-        attackElements[0].onClick.RemoveAllListeners();
-        attackElements[1].onClick.RemoveAllListeners();
-    }
-
-    public void AttackWith(string elementName)
-    {
-        Debug.Log("Attacking with " + elementName);
-    }
+    #endregion
 }

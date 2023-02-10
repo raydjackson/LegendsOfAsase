@@ -26,4 +26,14 @@ public abstract class GameState : State
     {
         base.Exit();
     }
+
+    protected override void AddListeners()
+    {
+        base.AddListeners();
+    }
+
+    protected override void RemoveListeners()
+    {
+        base.RemoveListeners();
+    }
 }

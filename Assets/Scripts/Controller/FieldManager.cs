@@ -70,7 +70,7 @@ public class FieldManager : MonoBehaviour
         //Playcard pC12 = Instantiate(basicPlaycard, withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         pC1.legend = GameManager.instance.availableLegends[0];
         p1ActiveLegend = pC1.legend;
-        pC2.legend = GameManager.instance.availableLegends[1];
+        pC2.legend = GameManager.instance.availableLegends[2];
         p2ActiveLegend = pC2.legend;
         //pC3.legend = GameManager.instance.example;
         //pC4.legend = GameManager.instance.example;

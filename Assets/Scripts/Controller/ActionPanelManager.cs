@@ -14,6 +14,7 @@ public class ActionPanelManager : MonoBehaviour
     [Header("Attack Panel")]
     public GameObject attackPanel;
     public Button attackButton;
+    public GameObject attackOptionsPanel;
     public Button[] attackElements;
     public Image[] attackElementIcons;
     public TMP_Text[] attackElementTexts;
@@ -22,6 +23,7 @@ public class ActionPanelManager : MonoBehaviour
     [Header("Switch Panel")]
     public GameObject switchPanel;
     public Button switchButton;
+    public GameObject switchOptionsPanel;
     public Button switchLeftButton;
     public Button switchRightButton;
     public Button switchBackButton;
@@ -29,6 +31,7 @@ public class ActionPanelManager : MonoBehaviour
     [Header("Technique Panel")]
     public GameObject techniquePanel;
     public Button techniqueButton;
+    public GameObject techniqueOptionsPanel;
     public Button[] techniqueOptions;
     public Image[] techniqueOptionIcons;
     public TMP_Text[] techniqueOptionTexts;

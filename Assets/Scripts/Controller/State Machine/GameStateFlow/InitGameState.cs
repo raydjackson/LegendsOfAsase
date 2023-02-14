@@ -1,13 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class InitGameState : GameState
 {
+    bool gameStarted = false;
     public override void Enter()
     {
         base.Enter();
-        StartCoroutine(Init());
+        NetworkManager.instance.Connect();
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        if (!gameStarted && PhotonNetwork.InRoom)
+        {
+            gameStarted = true;
+            StartCoroutine(Init());
+        }
     }
 
     public override void Exit()

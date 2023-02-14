@@ -6,6 +6,8 @@ public class SelectAttackOptionState : GameState
 {
     public override void Enter()
     {
+        ActionPanelManager.instance.switchPanel.SetActive(false);
+        ActionPanelManager.instance.techniquePanel.SetActive(false);
         ActionPanelManager.instance.UpdateAttackPanel(FieldManager.instance.p1ActiveLegend);
         ActionPanelManager.instance.ShowAttackOptionPanel();
         base.Enter();

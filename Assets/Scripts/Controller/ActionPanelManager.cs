@@ -99,4 +99,32 @@ public class ActionPanelManager : MonoBehaviour
         }
     }
     #endregion
+
+    #region Switch Option Methods
+    public void ShowSwitchOptionPanel()
+    {
+        switchOptionsPanel.SetActive(true);
+        switchBackButton.gameObject.SetActive(true);
+    }
+
+    public void HideSwitchOptionPanel()
+    {
+        switchOptionsPanel.SetActive(false);
+        switchBackButton.gameObject.SetActive(false);
+    }
+    #endregion
+
+    #region Technique Option Methods
+    public void ShowTechniqueOptionPanel()
+    {
+        techniqueOptionsPanel.SetActive(true);
+        techniqueBackButton.gameObject.SetActive(true);
+    }
+
+    public void HideTechniqueOptionPanel()
+    {
+        techniqueOptionsPanel.SetActive(false);
+        techniqueBackButton.gameObject.SetActive(false);
+    }
+    #endregion
 }

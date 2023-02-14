@@ -12,8 +12,6 @@ public class SelectActionStepState : GameState
 
     public override void Exit()
     {
-        ActionPanelManager.instance.switchPanel.SetActive(false);
-        ActionPanelManager.instance.techniquePanel.SetActive(false);
         base.Exit();
     }
 
@@ -26,15 +24,15 @@ public class SelectActionStepState : GameState
     {
         base.AddListeners();
         ActionPanelManager.instance.attackButton.onClick.AddListener(delegate { owner.ChangeState<SelectAttackOptionState>(); });
-        //switch button
-        //technique button
+        ActionPanelManager.instance.switchButton.onClick.AddListener(delegate { owner.ChangeState<SelectSwitchOptionState>(); });
+        ActionPanelManager.instance.techniqueButton.onClick.AddListener(delegate { owner.ChangeState<SelectTechniqueOptionState>(); });
     }
 
     protected override void RemoveListeners()
     {
         base.RemoveListeners();
         ActionPanelManager.instance.attackButton.onClick.RemoveAllListeners();
-        //switch button
-        //technique button
+        ActionPanelManager.instance.switchButton.onClick.RemoveAllListeners();
+        ActionPanelManager.instance.techniqueButton.onClick.RemoveAllListeners();
     }
 }

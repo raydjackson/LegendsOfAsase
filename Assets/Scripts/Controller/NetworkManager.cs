@@ -18,7 +18,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        Connect();
+
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         else
         {
             PhotonNetwork.ConnectUsingSettings();
+            //PhotonNetwork.OfflineMode = true;
         }
     }
 

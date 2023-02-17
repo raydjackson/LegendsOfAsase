@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3418669914528406373}
   - component: {fileID: 1220222684450881408}
-  - component: {fileID: 464219795813111589}
+  - component: {fileID: 2980300423806676272}
   m_Layer: 0
-  m_Name: Denzion, the Defender
+  m_Name: Arrik
   m_TagString: Legend
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,11 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83c56b4808b4234989f45ed9e20188f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullName: Denzion, the Defender
+  fullName: Arrik, the Guard
   elements:
-  - {fileID: 3407226575728773204, guid: f74916af7f05f9f45b495537efb45575, type: 3}
-  speed: 4
---- !u!114 &464219795813111589
+  - {fileID: 2760340808501925602, guid: 7891079f2ac5cd140a1136c98676f1d6, type: 3}
+  - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
+  speed: 3
+--- !u!114 &2980300423806676272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

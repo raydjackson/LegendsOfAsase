@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4792304358206457257}
   - component: {fileID: 6061713211013967116}
   m_Layer: 0
-  m_Name: Grimoire, the Vicious
+  m_Name: Grimoire
   m_TagString: Legend
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

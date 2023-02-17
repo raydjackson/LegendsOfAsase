@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class SelectSwitchOptionState : GameState
 {
@@ -26,8 +27,8 @@ public class SelectSwitchOptionState : GameState
     protected override void AddListeners()
     {
         base.AddListeners();
-        PanelManager.instance.switchLeftButton.onClick.AddListener(delegate { SwitchTo("Left"); });
-        PanelManager.instance.switchRightButton.onClick.AddListener(delegate { SwitchTo("Right"); });
+        PanelManager.instance.switchLeftButton.onClick.AddListener(delegate { SwitchTo(Constants.SWITCH_LEFT); });
+        PanelManager.instance.switchRightButton.onClick.AddListener(delegate { SwitchTo(Constants.SWITCH_RIGHT); });
         PanelManager.instance.switchBackButton.onClick.AddListener(delegate { owner.ChangeState<SelectActionStepState>(); });
     }
 
@@ -41,6 +42,13 @@ public class SelectSwitchOptionState : GameState
 
     public void SwitchTo(string switchDirection)
     {
-        Debug.Log("Switching to the " + switchDirection);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            ActionManager.instance.CreateAction(Constants.SWITCH, switchDirection, Constants.PLAYER_1);
+        }
+        else
+        {
+            ActionManager.instance.CreateAction(Constants.SWITCH, switchDirection, Constants.PLAYER_2);
+        }
     }
 }

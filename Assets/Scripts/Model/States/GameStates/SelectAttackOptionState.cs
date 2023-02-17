@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using LegendsOfAsaseEnums;
 
 public class SelectAttackOptionState : GameState
 {
@@ -8,7 +10,16 @@ public class SelectAttackOptionState : GameState
     {
         PanelManager.instance.switchPanel.SetActive(false);
         PanelManager.instance.techniquePanel.SetActive(false);
-        PanelManager.instance.UpdateAttackPanel(FieldManager.instance.p1ActiveLegend);
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.p1Playcards[FieldPosition.Active].legend);
+        }
+        else
+        {
+            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.p2Playcards[FieldPosition.Active].legend);
+        }
+
         PanelManager.instance.ShowAttackOptionPanel();
         base.Enter();
     }
@@ -45,6 +56,14 @@ public class SelectAttackOptionState : GameState
 
     public void AttackWith(string elementName)
     {
-        Debug.Log("Attacking with " + elementName);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            ActionManager.instance.CreateAction(Constants.ATTACK, elementName, Constants.PLAYER_1);
+        }
+        else
+        {
+            ActionManager.instance.CreateAction(Constants.ATTACK, elementName, Constants.PLAYER_2);
+        }
+        
     }
 }

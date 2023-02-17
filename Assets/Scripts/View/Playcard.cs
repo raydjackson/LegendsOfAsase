@@ -18,9 +18,17 @@ public class Playcard : MonoBehaviour
 
     protected virtual void SetFields()
     {
-        SetName();
-        SetHealth();
-        SetElements();
+        if (legend != null)
+        {
+            SetName();
+            SetHealth();
+            SetElements();
+            this.gameObject.SetActive(true);
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     protected virtual void SetName()
@@ -50,5 +58,10 @@ public class Playcard : MonoBehaviour
             elementTwo.color = ele[1].ElementColor;
             elementTwo.gameObject.SetActive(true);
         }
+    }
+
+    public void SetLegend(Legend legend)
+    {
+        this.legend = legend;
     }
 }

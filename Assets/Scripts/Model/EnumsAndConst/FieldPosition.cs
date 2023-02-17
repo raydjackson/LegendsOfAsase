@@ -9,10 +9,4 @@ namespace LegendsOfAsaseEnums
         WithdrawTwo,
         WithdrawThree
     }
-
-    public enum PlayerSide
-    {
-        Player1,
-        Player2
-    }
 }

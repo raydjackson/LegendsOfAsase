@@ -16,7 +16,10 @@ public class Legend : MonoBehaviour
 
     private void Start()
     {
-
+        if (legendHealth != null)
+        {
+            legendHealth.InitializeHealth(this);
+        }
     }
 
     public string GetFullName()
@@ -63,7 +66,12 @@ public class Legend : MonoBehaviour
             {
                 legendHealth = gameObject.AddComponent<Health>() as Health;
             }
-            legendHealth.InitializeHealth();
+            legendHealth.InitializeHealth(this);
+        }
+
+        if (legendHealth.owner == null)
+        {
+            legendHealth.SetOwner(this);
         }
 
         return legendHealth;

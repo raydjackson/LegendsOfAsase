@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance { get; private set; }
 
     public Legend example;
-    public Legend[] availableLegends;
+    public GameObject[] availableLegends;
     public Playcard selectedPlaycard = null;
     public LayerMask fieldLayer;
     public TMPro.TMP_Text stateIndicator;

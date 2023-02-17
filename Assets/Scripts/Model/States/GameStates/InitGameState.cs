@@ -17,6 +17,7 @@ public class InitGameState : GameState
         base.Update();
         if (!gameStarted && PhotonNetwork.InRoom)
         {
+            //TO DO: move gameStarted bool to GameManager
             gameStarted = true;
             StartCoroutine(Init());
         }

@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ActionPanelManager : MonoBehaviour
+public class PanelManager : MonoBehaviour
 {
-    public static ActionPanelManager instance { get; private set; }
+    public static PanelManager instance { get; private set; }
 
     #region Panel References
     public GameObject instructionPanel;

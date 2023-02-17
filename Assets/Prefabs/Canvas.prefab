@@ -3420,7 +3420,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5190361399229814588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,7 +4061,7 @@ GameObject:
   - component: {fileID: 5190361399576219559}
   - component: {fileID: 5190361399576219557}
   - component: {fileID: 5190361399576219556}
-  - component: {fileID: 5190361399576219562}
+  - component: {fileID: 1465009346476802961}
   m_Layer: 5
   m_Name: ActionsPanel
   m_TagString: Untagged
@@ -4132,7 +4132,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5190361399576219562
+--- !u!114 &1465009346476802961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4141,7 +4141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5190361399576219558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5aeabd745d7ae49bf66f294ac82fcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2baddfc77a96c2e45801441d441ad58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   instructionPanel: {fileID: 5190361398075677791}

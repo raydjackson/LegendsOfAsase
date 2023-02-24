@@ -25,23 +25,22 @@ public class ActionManager : MonoBehaviourPunCallbacks
         switch (actionType)
         {
             case Constants.ATTACK:
-                if (player == Constants.PLAYER_1)
+                if (player == Constants.PLAYER_1 || player == Constants.PLAYER_2)
                 {
-                    AttackAction atkAction = new AttackAction(FieldManager.instance.p1Playcards[FieldPosition.Active].legend, ElementChart.instance.elementDatabase[actionOption]);
+                    AttackAction atkAction = new AttackAction(FieldManager.instance.playcards[player][FieldPosition.Active].legend, ElementChart.instance.elementDatabase[actionOption]);
                     actions.Add(atkAction);
                     Debug.Log($"{player}'s active legend will {atkAction.actionType} with the {atkAction.attackElement.ElementName} element");
-                }
-                else if (player == Constants.PLAYER_2)
-                {
-                    AttackAction atkAction = new AttackAction(FieldManager.instance.p2Playcards[FieldPosition.Active].legend, ElementChart.instance.elementDatabase[actionOption]);
-                    actions.Add(atkAction);
-                    Debug.Log($"{player}'s active legend will {atkAction.actionType} with the {atkAction.attackElement.ElementName} element");
+                    atkAction.ExecuteFirst(FieldManager.instance.playcards[Constants.OppositePlayer(player)][FieldPosition.Active].legend);
                 }
                 break;
             case Constants.SWITCH:
-                SwitchAction switchAction = new SwitchAction(player, actionOption);
-                actions.Add(switchAction);
-                Debug.Log($"{player}'s active legend will {switchAction.actionType} to the {switchAction.switchDirection}");
+                if (player == Constants.PLAYER_1 || player == Constants.PLAYER_2)
+                {
+                    SwitchAction switchAction = new SwitchAction(player, actionOption);
+                    actions.Add(switchAction);
+                    Debug.Log($"{player}'s active legend will {switchAction.actionType} to the {switchAction.switchDirection}");
+                    switchAction.ExecuteSecond(null);
+                }
                 break;
             default:
                 break;

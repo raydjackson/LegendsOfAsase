@@ -13,11 +13,11 @@ public class SelectAttackOptionState : GameState
 
         if (PhotonNetwork.IsMasterClient)
         {
-            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.p1Playcards[FieldPosition.Active].legend);
+            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend);
         }
         else
         {
-            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.p2Playcards[FieldPosition.Active].legend);
+            PanelManager.instance.UpdateAttackPanel(FieldManager.instance.playcards[Constants.PLAYER_2][FieldPosition.Active].legend);
         }
 
         PanelManager.instance.ShowAttackOptionPanel();

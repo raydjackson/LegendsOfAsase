@@ -31,13 +31,15 @@ public class FieldManager : MonoBehaviour
     #endregion
 
     #region Dictionaries
-    public Dictionary<FieldPosition, Playcard> p1Playcards = new Dictionary<FieldPosition, Playcard>();
-    public Dictionary<FieldPosition, Playcard> p2Playcards = new Dictionary<FieldPosition, Playcard>();
-    public Dictionary<FieldPosition, Transform> p1Transforms = new Dictionary<FieldPosition, Transform>();
-    public Dictionary<FieldPosition, Transform> p2Transforms = new Dictionary<FieldPosition, Transform>();
+    public Dictionary<string, Dictionary<FieldPosition, Playcard>> playcards = new Dictionary<string, Dictionary<FieldPosition, Playcard>>();
+    public Dictionary<string, Dictionary<FieldPosition, Transform>> transforms = new Dictionary<string, Dictionary<FieldPosition, Transform>>();
+
 
     private void BuildTransformDictionaries()
     {
+        Dictionary<FieldPosition, Transform> p1Transforms = new Dictionary<FieldPosition, Transform>();
+        Dictionary<FieldPosition, Transform> p2Transforms = new Dictionary<FieldPosition, Transform>();
+
         //Player 1 Transforms
         p1Transforms.Add(FieldPosition.Active, activePlayerOne);
         p1Transforms.Add(FieldPosition.SupportLeft, supportLeftPlayerOne);
@@ -53,6 +55,9 @@ public class FieldManager : MonoBehaviour
         p2Transforms.Add(FieldPosition.WithdrawOne, withdrawOnePlayerTwo);
         p2Transforms.Add(FieldPosition.WithdrawTwo, withdrawTwoPlayerTwo);
         p2Transforms.Add(FieldPosition.WithdrawThree, withdrawThreePlayerTwo);
+
+        transforms.Add(Constants.PLAYER_1, p1Transforms);
+        transforms.Add(Constants.PLAYER_2, p2Transforms);
     }
     #endregion
 
@@ -69,6 +74,9 @@ public class FieldManager : MonoBehaviour
 
     public void CreateTestPlaycards()
     {
+        Dictionary<FieldPosition, Playcard> p1Playcards = new Dictionary<FieldPosition, Playcard>();
+        Dictionary<FieldPosition, Playcard> p2Playcards = new Dictionary<FieldPosition, Playcard>();
+
         Playcard pC1 = Instantiate(activePlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC2 = Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC3 = Instantiate(basicPlaycard, supportLeftPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
@@ -110,39 +118,24 @@ public class FieldManager : MonoBehaviour
         //p2Playcards.Add(FieldPosition.WithdrawOne, pC10);
         //p2Playcards.Add(FieldPosition.WithdrawTwo, pC11);
         //p2Playcards.Add(FieldPosition.WithdrawThree, pC12);
+
+        playcards.Add(Constants.PLAYER_1, p1Playcards);
+        playcards.Add(Constants.PLAYER_2, p2Playcards);
     }
 
     #region Switching
     public void SwitchLegends(string player, string switchDirection)
     {
-        Legend tempLeg;
-        if (player == Constants.PLAYER_1)
+        Legend tempLeg = playcards[player][FieldPosition.Active].legend;
+        if (switchDirection == Constants.SWITCH_LEFT)
         {
-            tempLeg = p1Playcards[FieldPosition.Active].legend;
-            if (switchDirection == Constants.SWITCH_LEFT)
-            {
-                p1Playcards[FieldPosition.Active].SetLegend(p1Playcards[FieldPosition.SupportLeft].legend);
-                p1Playcards[FieldPosition.SupportLeft].SetLegend(tempLeg);
-            }
-            else
-            {
-                p1Playcards[FieldPosition.Active].SetLegend(p1Playcards[FieldPosition.SupportRight].legend);
-                p1Playcards[FieldPosition.SupportRight].SetLegend(tempLeg);
-            }
+            playcards[player][FieldPosition.Active].SetLegend(playcards[player][FieldPosition.SupportLeft].legend);
+            playcards[player][FieldPosition.SupportLeft].SetLegend(tempLeg);
         }
-        else
+        else if (switchDirection == Constants.SWITCH_RIGHT)
         {
-            tempLeg = p2Playcards[FieldPosition.Active].legend;
-            if (switchDirection == Constants.SWITCH_LEFT)
-            {
-                p2Playcards[FieldPosition.Active].SetLegend(p2Playcards[FieldPosition.SupportLeft].legend);
-                p2Playcards[FieldPosition.SupportLeft].SetLegend(tempLeg);
-            }
-            else
-            {
-                p2Playcards[FieldPosition.Active].SetLegend(p2Playcards[FieldPosition.SupportRight].legend);
-                p2Playcards[FieldPosition.SupportRight].SetLegend(tempLeg);
-            }
+            playcards[player][FieldPosition.Active].SetLegend(playcards[player][FieldPosition.SupportRight].legend);
+            playcards[player][FieldPosition.SupportRight].SetLegend(tempLeg);
         }
     }
     #endregion

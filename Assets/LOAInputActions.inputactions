@@ -1,5 +1,5 @@
 {
-    "name": "LegendsOfAsase",
+    "name": "LOAInputActions",
     "maps": [
         {
             "name": "Player",
@@ -9,6 +9,24 @@
                     "name": "Select",
                     "type": "Button",
                     "id": "0d73f43b-0c16-4291-ad16-0f07f16c3e4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Test1",
+                    "type": "Button",
+                    "id": "3840bc81-5c65-476c-aa81-e2c0f542a163",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Test2",
+                    "type": "Button",
+                    "id": "56368bb7-1ae2-4c45-88c5-ccb403b134fe",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -68,6 +86,28 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "670ef475-f48e-4657-b608-c099ffa55b7a",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Test1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "150dee0f-ed48-4237-bbe4-870faa5952f3",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

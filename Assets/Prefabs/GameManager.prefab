@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5817224441743276700}
   - component: {fileID: 5817224441743276703}
   - component: {fileID: 5304507912532958096}
-  - component: {fileID: 1350765137}
   - component: {fileID: 1039048118}
   - component: {fileID: 6199069405434635505}
+  - component: {fileID: 1817578013539499344}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,9 +51,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   example: {fileID: 1220222684450881408, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
   availableLegends:
-  - {fileID: 1220222684450881408, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
-  - {fileID: 1220222684450881408, guid: c86781ab29c2aef4288f45467b46ac3b, type: 3}
-  - {fileID: 4792304358206457257, guid: f86eae5ac788d3645a551407427003d9, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   selectedPlaycard: {fileID: 0}
   fieldLayer:
     serializedVersion: 2
@@ -106,19 +106,31 @@ MonoBehaviour:
   withdrawOnePlayerTwo: {fileID: 0}
   withdrawTwoPlayerTwo: {fileID: 0}
   withdrawThreePlayerTwo: {fileID: 0}
-  p1ActiveLegend: {fileID: 0}
-  p1SupportLeftLegend: {fileID: 0}
-  p1SupportRightLegend: {fileID: 0}
-  p1WithdrawOneLegend: {fileID: 0}
-  p1WithdrawTwoLegend: {fileID: 0}
-  p1WithdrawThreeLegend: {fileID: 0}
-  p2ActiveLegend: {fileID: 0}
-  p2SupportLeftLegend: {fileID: 0}
-  p2SupportRightLegend: {fileID: 0}
-  p2WithdrawOneLegend: {fileID: 0}
-  p2WithdrawTwoLegend: {fileID: 0}
-  p2WithdrawThreeLegend: {fileID: 0}
---- !u!114 &1350765137
+--- !u!114 &1039048118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817224441743276702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9548a4f7dc0248a45b3806b4545ec824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6199069405434635505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817224441743276702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb58d5229acd3648ba09775c10ec0cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1817578013539499344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +159,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0d73f43b-0c16-4291-ad16-0f07f16c3e4b
     m_ActionName: Player/Select[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3840bc81-5c65-476c-aa81-e2c0f542a163
+    m_ActionName: Player/PowerMod[/Keyboard/p]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 6f3d418f-5fbc-41da-b1c1-8195da2f2989
@@ -187,32 +203,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 321e719e-7476-40a6-91d2-c536d2a31d8d
     m_ActionName: UI/TrackedDeviceOrientation
-  m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard&Mouse
-  m_DefaultActionMap: UI
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1039048118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5817224441743276702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9548a4f7dc0248a45b3806b4545ec824, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6199069405434635505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5817224441743276702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb58d5229acd3648ba09775c10ec0cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

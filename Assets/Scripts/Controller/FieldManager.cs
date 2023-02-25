@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LegendsOfAsaseEnums;
+using TMPro;
 
 public class FieldManager : MonoBehaviour
 {
@@ -21,6 +22,12 @@ public class FieldManager : MonoBehaviour
     public Transform withdrawTwoPlayerOne;
     public Transform withdrawThreePlayerOne;
 
+    [Header("Player One Field Mods")]
+    public GameObject p1Hazard;
+    public TMP_Text p1HazardText;
+    public GameObject p1Speed;
+    public TMP_Text p1SpeedText;
+
     [Header("Player Two Field Transforms")]
     public Transform activePlayerTwo;
     public Transform supportLeftPlayerTwo;
@@ -28,6 +35,12 @@ public class FieldManager : MonoBehaviour
     public Transform withdrawOnePlayerTwo;
     public Transform withdrawTwoPlayerTwo;
     public Transform withdrawThreePlayerTwo;
+
+    [Header("Player Two Field Mods")]
+    public GameObject p2Hazard;
+    public TMP_Text p2HazardText;
+    public GameObject p2Speed;
+    public TMP_Text p2SpeedText;
     #endregion
 
     #region Dictionaries

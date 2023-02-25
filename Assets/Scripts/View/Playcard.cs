@@ -10,6 +10,10 @@ public class Playcard : MonoBehaviour
     public Image elementOne;
     public Image elementTwo;
     public Legend legend;
+    public GameObject powerMod;
+    public TMP_Text powerModText;
+    public GameObject shieldMod;
+    public TMP_Text shieldModText;
 
     private void Update()
     {
@@ -23,6 +27,7 @@ public class Playcard : MonoBehaviour
             SetName();
             SetHealth();
             SetElements();
+            SetEquipMods();
             this.gameObject.SetActive(true);
         }
         else
@@ -57,6 +62,45 @@ public class Playcard : MonoBehaviour
             elementTwo.sprite = ele[1].ElementIcon;
             elementTwo.color = ele[1].ElementColor;
             elementTwo.gameObject.SetActive(true);
+        }
+    }
+
+    protected void SetEquipMods()
+    {
+        if (legend.equipMods.Count > 0)
+        {
+            foreach (EquipMod mod in legend.equipMods)
+            {
+                if (mod is Power)
+                {
+                    if (mod.GetCountOfMod() > 0)
+                    {
+                        powerModText.text = mod.GetCountOfMod().ToString();
+                        powerMod.SetActive(true);
+                    }
+                    else
+                    {
+                        powerMod.SetActive(false);
+                    }
+                }
+                else if (mod is Shield)
+                {
+                    if (mod.GetCountOfMod() > 0)
+                    {
+                        shieldModText.text = mod.GetCountOfMod().ToString();
+                        shieldMod.SetActive(true);
+                    }
+                    else
+                    {
+                        shieldMod.SetActive(false);
+                    }
+                }
+            }
+        }
+        else
+        {
+            powerMod.SetActive(false);
+            shieldMod.SetActive(false);
         }
     }
 

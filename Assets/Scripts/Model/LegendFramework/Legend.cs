@@ -13,6 +13,7 @@ public class Legend : MonoBehaviour
     protected Health legendHealth;
     //Personnel
     //Effect/Ability
+    public List<EquipMod> equipMods = new List<EquipMod>();
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class Legend : MonoBehaviour
         {
             legendHealth.InitializeHealth(this);
         }
+
     }
 
     public string GetFullName()
@@ -62,9 +64,9 @@ public class Legend : MonoBehaviour
     {
         if (legendHealth == null)
         {
-            if (!gameObject.TryGetComponent<Health>(out legendHealth))
+            if (!gameObject.TryGetComponent(out legendHealth))
             {
-                legendHealth = gameObject.AddComponent<Health>() as Health;
+                legendHealth = gameObject.AddComponent<Health>();
             }
             legendHealth.InitializeHealth(this);
         }
@@ -75,5 +77,45 @@ public class Legend : MonoBehaviour
         }
 
         return legendHealth;
+    }
+
+    public T AddEquipMod<T>(int amount) where T : EquipMod
+    {
+        T equipMod;
+
+        if (!TryGetComponent(out equipMod))
+        {
+            equipMod = gameObject.AddComponent<T>();
+        }
+
+        equipMod.AddCount(amount);
+
+        if (!equipMods.Contains(equipMod))
+        {
+            equipMods.Add(equipMod);
+        }
+
+        return equipMod;
+    }
+
+    public void UseEquipMod<T>(int amount) where T : EquipMod
+    {
+        if (TryGetComponent(out T equipMod))
+        {
+            equipMod.RemoveCount(amount);
+            if (equipMod.GetCountOfMod() <= 0)
+            {
+                RemoveEquipMod<T>();
+            }
+        }
+    }
+
+    public void RemoveEquipMod<T>() where T : EquipMod
+    {
+        if (TryGetComponent(out T equipMod))
+        {
+            equipMods.Remove(equipMod);
+            Destroy(equipMod);
+        }
     }
 }

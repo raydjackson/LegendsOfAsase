@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using LegendsOfAsaseEnums;
 
-public class Shield : EquipMod
+public class Hazard : FieldMod
 {
     private void Start()
     {
-        modType = ModType.Shield;
+        modType = ModType.Hazard;
     }
 }

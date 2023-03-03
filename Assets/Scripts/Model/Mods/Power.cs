@@ -7,6 +7,6 @@ public class Power : EquipMod
 {
     private void Start()
     {
-        modtype = ModType.Power;
+        modType = ModType.Power;
     }
 }

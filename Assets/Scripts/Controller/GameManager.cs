@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     {
         if (context.performed)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()), Vector2.zero);
             if (hit.collider != null && hit.collider.TryGetComponent(out selectedPlaycard))
             {
                 Debug.Log(selectedPlaycard.legend.GetShortName());
@@ -42,21 +42,63 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddPowerMod(InputAction.CallbackContext context)
+    public void AddHazardModP1(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Legend actLegend = FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend;
-            actLegend.AddEquipMod<Power>(1);
+            FieldManager.instance.AddFieldMod(Constants.PLAYER_1, ModType.Hazard, 1);
         }
     }
 
-    public void RemovePowerMod(InputAction.CallbackContext context)
+    public void AddHazardModP2(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Legend actLegend = FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend;
-            actLegend.UseEquipMod<Power>(1);
+            FieldManager.instance.AddFieldMod(Constants.PLAYER_2, ModType.Hazard, 1);
+        }
+    }
+
+    public void UseHazardMods(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            FieldManager.instance.UseFieldMod(Constants.PLAYER_1, ModType.Hazard, 1);
+            FieldManager.instance.UseFieldMod(Constants.PLAYER_2, ModType.Hazard, 1);
+        }
+    }
+
+    public void AddPowerModActive(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend.AddEquipMod<Power>(1);
+        }
+    }
+
+    public void AddPowerModSupportLeft(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            //FieldManager.instance.AddFieldMod<Speed>(Constants.PLAYER_2, 1);
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportLeft].legend.AddEquipMod<Power>(1);
+        }
+    }
+
+    public void AddPowerModSupportRight(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportRight].legend.AddEquipMod<Power>(1);
+        }
+    }
+
+    public void UsePowerMods(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend.UseEquipMod<Power>(1);
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportLeft].legend.UseEquipMod<Power>(1);
+            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportRight].legend.UseEquipMod<Power>(1);
         }
     }
 }

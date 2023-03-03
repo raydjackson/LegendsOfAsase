@@ -6,7 +6,7 @@ using LegendsOfAsaseEnums;
 public class Mod : MonoBehaviour
 {
     public int count = 0;
-    public ModType modtype;
+    public ModType modType;
 
     public int GetCountOfMod()
     {

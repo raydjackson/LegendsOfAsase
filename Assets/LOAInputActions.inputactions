@@ -31,6 +31,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Test3",
+                    "type": "Button",
+                    "id": "d085afd9-47ce-4a68-b1c3-dbc12668c591",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Test4",
+                    "type": "Button",
+                    "id": "f1df67b1-405e-4d9e-8b7d-c4a1367d0463",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -92,7 +110,7 @@
                 {
                     "name": "",
                     "id": "670ef475-f48e-4657-b608-c099ffa55b7a",
-                    "path": "<Keyboard>/p",
+                    "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -103,11 +121,33 @@
                 {
                     "name": "",
                     "id": "150dee0f-ed48-4237-bbe4-870faa5952f3",
-                    "path": "<Keyboard>/o",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Test2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1dcc51c-e759-494e-86c4-14c376c8d905",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df3593aa-257a-496a-b4b7-bb106d1674de",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Test4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

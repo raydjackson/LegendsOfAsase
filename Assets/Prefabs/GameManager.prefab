@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5817224441743276701}
   - component: {fileID: 5817224441743276700}
   - component: {fileID: 5817224441743276703}
-  - component: {fileID: 5304507912532958096}
   - component: {fileID: 1039048118}
   - component: {fileID: 6199069405434635505}
   - component: {fileID: 1817578013539499344}
@@ -80,32 +79,6 @@ MonoBehaviour:
   - {fileID: 9202899056394054234, guid: 1082f92b33252b04788a87b7c529d217, type: 3}
   - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
   - {fileID: 6146148462128879484, guid: 253b98450edd6cd449163d7ba7dea932, type: 3}
---- !u!114 &5304507912532958096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5817224441743276702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90b836e9ae152494a9296cf4c76cf928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basicPlaycard: {fileID: 7041917823210313679, guid: 400327bdabbf2c04b884c988d40b6198, type: 3}
-  activePlaycard: {fileID: 6818081461686121621, guid: b5a5cf91201e94149bc95cfaa3fd75f2, type: 3}
-  activePlayerOne: {fileID: 0}
-  supportLeftPlayerOne: {fileID: 0}
-  supportRightPlayerOne: {fileID: 0}
-  withdrawOnePlayerOne: {fileID: 0}
-  withdrawTwoPlayerOne: {fileID: 0}
-  withdrawThreePlayerOne: {fileID: 0}
-  activePlayerTwo: {fileID: 0}
-  supportLeftPlayerTwo: {fileID: 0}
-  supportRightPlayerTwo: {fileID: 0}
-  withdrawOnePlayerTwo: {fileID: 0}
-  withdrawTwoPlayerTwo: {fileID: 0}
-  withdrawThreePlayerTwo: {fileID: 0}
 --- !u!114 &1039048118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +176,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 321e719e-7476-40a6-91d2-c536d2a31d8d
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 56368bb7-1ae2-4c45-88c5-ccb403b134fe
+    m_ActionName: Player/Test2[/Keyboard/o]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

@@ -23,6 +23,7 @@ public class FieldManager : MonoBehaviour
     public Transform withdrawThreePlayerOne;
 
     [Header("Player One Field Mods")]
+    public GameObject p1FieldMods;
     public GameObject p1Hazard;
     public TMP_Text p1HazardText;
     public GameObject p1Speed;
@@ -37,16 +38,25 @@ public class FieldManager : MonoBehaviour
     public Transform withdrawThreePlayerTwo;
 
     [Header("Player Two Field Mods")]
+    public GameObject p2FieldMods;
     public GameObject p2Hazard;
     public TMP_Text p2HazardText;
     public GameObject p2Speed;
     public TMP_Text p2SpeedText;
     #endregion
 
+    #region Mod References
+    [Header("Mod References")]
+    public GameObject powerMod;
+    public GameObject shieldMod;
+    public GameObject hazardMod;
+    public GameObject speedMod;
+    #endregion
+
     #region Dictionaries
     public Dictionary<string, Dictionary<FieldPosition, Playcard>> playcards = new Dictionary<string, Dictionary<FieldPosition, Playcard>>();
     public Dictionary<string, Dictionary<FieldPosition, Transform>> transforms = new Dictionary<string, Dictionary<FieldPosition, Transform>>();
-
+    public Dictionary<string, Dictionary<ModType, GameObject>> fieldMods = new Dictionary<string, Dictionary<ModType, GameObject>>();
 
     private void BuildTransformDictionaries()
     {
@@ -78,11 +88,17 @@ public class FieldManager : MonoBehaviour
     {
         instance = this;
         BuildTransformDictionaries();
+        BuildFieldModDictionaries();
     }
 
     private void Start()
     {
 
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void CreateTestPlaycards()
@@ -149,6 +165,152 @@ public class FieldManager : MonoBehaviour
         {
             playcards[player][FieldPosition.Active].SetLegend(playcards[player][FieldPosition.SupportRight].legend);
             playcards[player][FieldPosition.SupportRight].SetLegend(tempLeg);
+        }
+    }
+    #endregion
+
+    #region Field Mods
+    private void BuildFieldModDictionaries()
+    {
+        fieldMods.Add(Constants.PLAYER_1, new Dictionary<ModType, GameObject>());
+        fieldMods.Add(Constants.PLAYER_2, new Dictionary<ModType, GameObject>());
+    }
+
+    private void UpdateFieldModUI()
+    {
+        //Player 1 Mods
+        if (fieldMods[Constants.PLAYER_1].Count > 0)
+        {
+            foreach (KeyValuePair<ModType,GameObject> modTypeDict in fieldMods[Constants.PLAYER_1])
+            {
+                FieldMod fieldMod = modTypeDict.Value.GetComponent<FieldMod>();
+                if (modTypeDict.Key == ModType.Hazard)
+                {
+                    if (fieldMod.GetCountOfMod() > 0)
+                    {
+                        p1HazardText.text = fieldMod.GetCountOfMod().ToString();
+                        p1Hazard.SetActive(true);
+                    }
+                    else
+                    {
+                        p1Hazard.SetActive(false);
+                    }
+                }
+                else if (modTypeDict.Key == ModType.Speed)
+                {
+                    if (fieldMod.GetCountOfMod() > 0)
+                    {
+                        p1SpeedText.text = fieldMod.GetCountOfMod().ToString();
+                        p1Speed.SetActive(true);
+                    }
+                    else
+                    {
+                        p1Speed.SetActive(false);
+                    }
+                }
+            }
+        }
+        else
+        {
+            p1Hazard.SetActive(false);
+            p1Speed.SetActive(false);
+        }
+
+        //Player 2 Mods
+        if (fieldMods[Constants.PLAYER_2].Count > 0)
+        {
+            foreach (KeyValuePair<ModType, GameObject> modTypeDict in fieldMods[Constants.PLAYER_2])
+            {
+                FieldMod fieldMod = modTypeDict.Value.GetComponent<FieldMod>();
+                if (modTypeDict.Key == ModType.Hazard)
+                {
+                    if (fieldMod.GetCountOfMod() > 0)
+                    {
+                        p2HazardText.text = fieldMod.GetCountOfMod().ToString();
+                        p2Hazard.SetActive(true);
+                    }
+                    else
+                    {
+                        p2Hazard.SetActive(false);
+                    }
+                }
+                else if (modTypeDict.Key == ModType.Speed)
+                {
+                    if (fieldMod.GetCountOfMod() > 0)
+                    {
+                        p2SpeedText.text = fieldMod.GetCountOfMod().ToString();
+                        p2Speed.SetActive(true);
+                    }
+                    else
+                    {
+                        p2Speed.SetActive(false);
+                    }
+                }
+            }
+        }
+        else
+        {
+            p2Hazard.SetActive(false);
+            p2Speed.SetActive(false);
+        }
+    }
+
+    public void AddFieldMod(string player, ModType modType, int amount)
+    {
+        GameObject modToMake;
+        if (modType == ModType.Hazard)
+        {
+            modToMake = hazardMod;
+        }
+        else if (modType == ModType.Speed)
+        {
+            modToMake = speedMod;
+        }
+        else
+        {
+            return;
+        }
+
+
+        if (!fieldMods[player].ContainsKey(modType))
+        {
+            FieldMod fieldMod = null;
+
+            if (player == Constants.PLAYER_1)
+            {
+                fieldMod = Instantiate(modToMake, p1FieldMods.transform).GetComponent<FieldMod>();
+            }
+            else if (player == Constants.PLAYER_2)
+            {
+                fieldMod = Instantiate(modToMake, p2FieldMods.transform).GetComponent<FieldMod>();
+            }
+
+            if (fieldMod != null)
+            {
+                fieldMod.AddCount(amount);
+                fieldMods[player].Add(modType, fieldMod.gameObject);
+            }
+        }
+        else
+        {
+            FieldMod fieldMod = fieldMods[player][modType].GetComponent<FieldMod>();
+            fieldMod.AddCount(amount);
+        }
+
+        UpdateFieldModUI();
+    }
+
+    public void UseFieldMod(string player, ModType modType, int amount)
+    {
+        if (fieldMods[player].ContainsKey(modType))
+        {
+            FieldMod fieldMod = fieldMods[player][modType].GetComponent<FieldMod>();
+
+            if (fieldMod.GetCountOfMod() > 0)
+            {
+                fieldMod.RemoveCount(amount);
+                UpdateFieldModUI();
+            }
         }
     }
     #endregion

@@ -79,6 +79,11 @@ public class Legend : MonoBehaviour
         return legendHealth;
     }
 
+    public bool IsAlive()
+    {
+        return legendHealth.currentHealth > 0;
+    }
+
     public T AddEquipMod<T>(int amount) where T : EquipMod
     {
         T equipMod;

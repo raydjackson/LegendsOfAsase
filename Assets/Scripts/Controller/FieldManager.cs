@@ -110,49 +110,52 @@ public class FieldManager : MonoBehaviour
         Playcard pC2 = Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC3 = Instantiate(basicPlaycard, supportLeftPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC4 = Instantiate(basicPlaycard, supportRightPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC5 = Instantiate(basicPlaycard, withdrawOnePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC6 = Instantiate(basicPlaycard, withdrawTwoPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC7 = Instantiate(basicPlaycard, withdrawThreePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC5 = Instantiate(basicPlaycard, withdrawOnePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC6 = Instantiate(basicPlaycard, withdrawTwoPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC7 = Instantiate(basicPlaycard, withdrawThreePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC8 = Instantiate(basicPlaycard, supportLeftPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC9 = Instantiate(basicPlaycard, supportRightPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC10 = Instantiate(basicPlaycard, withdrawOnePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC11 = Instantiate(basicPlaycard, withdrawTwoPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        //Playcard pC12 = Instantiate(basicPlaycard, withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC10 = Instantiate(basicPlaycard, withdrawOnePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC11 = Instantiate(basicPlaycard, withdrawTwoPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC12 = Instantiate(basicPlaycard, withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         
         pC1.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
         pC2.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
         pC3.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
         pC4.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
-        //pC5.legend = GameManager.instance.example;
-        //pC6.legend = GameManager.instance.example;
-        //pC7.legend = GameManager.instance.example;
+        pC5.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
+        pC6.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
+        pC7.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
         pC8.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
         pC9.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
-        //pC10.legend = GameManager.instance.example;
-        //pC11.legend = GameManager.instance.example;
-        //pC12.legend = GameManager.instance.example;
+        pC10.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
+        pC11.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
+        pC12.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
 
         //Player 1 Playcards
         p1Playcards.Add(FieldPosition.Active, pC1);
         p1Playcards.Add(FieldPosition.SupportLeft, pC3);
         p1Playcards.Add(FieldPosition.SupportRight, pC4);
-        //p1Playcards.Add(FieldPosition.WithdrawOne, pC5);
-        //p1Playcards.Add(FieldPosition.WithdrawTwo, pC6);
-        //p1Playcards.Add(FieldPosition.WithdrawThree, pC7);
+        p1Playcards.Add(FieldPosition.WithdrawOne, pC5);
+        p1Playcards.Add(FieldPosition.WithdrawTwo, pC6);
+        p1Playcards.Add(FieldPosition.WithdrawThree, pC7);
 
         //Player 2 Playcards
         p2Playcards.Add(FieldPosition.Active, pC2);
         p2Playcards.Add(FieldPosition.SupportLeft, pC8);
         p2Playcards.Add(FieldPosition.SupportRight, pC9);
-        //p2Playcards.Add(FieldPosition.WithdrawOne, pC10);
-        //p2Playcards.Add(FieldPosition.WithdrawTwo, pC11);
-        //p2Playcards.Add(FieldPosition.WithdrawThree, pC12);
+        p2Playcards.Add(FieldPosition.WithdrawOne, pC10);
+        p2Playcards.Add(FieldPosition.WithdrawTwo, pC11);
+        p2Playcards.Add(FieldPosition.WithdrawThree, pC12);
 
         playcards.Add(Constants.PLAYER_1, p1Playcards);
         playcards.Add(Constants.PLAYER_2, p2Playcards);
     }
 
-    #region Switching
+    #region Switching/Withdrawing
+    /// <summary>
+    /// Swaps the FieldPosition and Playcards of two Legends, one that is Active, the other in the support zone
+    /// </summary>
     public void SwitchLegends(string player, string switchDirection)
     {
         Legend tempLeg = playcards[player][FieldPosition.Active].legend;
@@ -166,6 +169,16 @@ public class FieldManager : MonoBehaviour
             playcards[player][FieldPosition.Active].SetLegend(playcards[player][FieldPosition.SupportRight].legend);
             playcards[player][FieldPosition.SupportRight].SetLegend(tempLeg);
         }
+    }
+
+    /// <summary>
+    /// Swaps the FieldPosition and Playcards of two Legends, the second of which is in the player's Withdraw Zone
+    /// </summary>
+    /// <param name="fieldPositionOne">FieldPosition of the non-Withdraw Zone Legend</param>
+    /// <param name="fieldPositionTwo">FieldPosition of the Withdraw Zone Legend</param>
+    public void WithdrawLegends(string player, FieldPosition fieldPositionOne, FieldPosition fieldPositionTwo)
+    {
+
     }
     #endregion
 
@@ -313,5 +326,70 @@ public class FieldManager : MonoBehaviour
             }
         }
     }
+    #endregion
+
+    #region Legends
+
+    public Legend LegendAt(string player, FieldPosition fieldPosition)
+    {
+        return playcards[player][fieldPosition].legend;
+    }
+
+    public Legend LegendAt(string player, string fieldPosition)
+    {
+        switch (fieldPosition)
+        {
+            case Constants.FIELD_ACTIVE:
+                return playcards[player][FieldPosition.Active].legend;
+            case Constants.FIELD_SPTLFT:
+                return playcards[player][FieldPosition.SupportLeft].legend;
+            case Constants.FIELD_SPTRGT:
+                return playcards[player][FieldPosition.SupportRight].legend;
+            case Constants.FIELD_WDONE:
+                return playcards[player][FieldPosition.WithdrawOne].legend;
+            case Constants.FIELD_WDTWO:
+                return playcards[player][FieldPosition.WithdrawTwo].legend;
+            case Constants.FIELD_WDTHREE:
+                return playcards[player][FieldPosition.WithdrawThree].legend;
+            default:
+                Debug.Log("FieldPosition not found");
+                return null;
+        }
+    }
+
+    public Legend[] GetSupportLegends(string player)
+    {
+        List<Legend> SupportLegends = new List<Legend>();
+        List<FieldPosition> SupportPositions = new List<FieldPosition> { FieldPosition.SupportLeft, FieldPosition.SupportRight };
+
+        foreach (FieldPosition fieldPosition in SupportPositions)
+        {
+            Legend curr = LegendAt(player, fieldPosition);
+            if (curr.IsAlive())
+            {
+                SupportLegends.Add(curr);
+            }
+        }
+
+        return SupportLegends.ToArray();
+    }
+
+    public Legend[] GetWithdrawLegends(string player)
+    {
+        List<Legend> WithdrawLegends = new List<Legend>();
+        List<FieldPosition> WithdrawPositions = new List<FieldPosition> { FieldPosition.WithdrawOne, FieldPosition.WithdrawTwo, FieldPosition.WithdrawThree };
+
+        foreach (FieldPosition fieldPosition in WithdrawPositions)
+        {
+            Legend curr = LegendAt(player, fieldPosition);
+            if (curr.IsAlive())
+            {
+                WithdrawLegends.Add(curr);
+            }
+        }
+
+        return WithdrawLegends.ToArray();
+    }
+
     #endregion
 }

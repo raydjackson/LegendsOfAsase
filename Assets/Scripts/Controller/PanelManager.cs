@@ -40,7 +40,11 @@ public class PanelManager : MonoBehaviour
 
     [Header("Withdraw Panel")]
     public GameObject withdrawPanel;
-    //buttons for withdraw options
+    public Button[] withdrawOutOptions;
+    public TMP_Text[] withdrawOutOptionTexts;
+    public Button[] withdrawInOptions;
+    public TMP_Text[] withdrawInOptionTexts;
+    public Button noWithdrawButton;
     public Button withdrawBackButton;
     #endregion
 
@@ -126,5 +130,64 @@ public class PanelManager : MonoBehaviour
         techniqueOptionsPanel.SetActive(false);
         techniqueBackButton.gameObject.SetActive(false);
     }
+    #endregion
+
+    #region Withdraw Methods
+
+    public void ShowWithdrawPanel()
+    {
+        withdrawPanel.SetActive(true);
+        withdrawBackButton.gameObject.SetActive(true);
+        noWithdrawButton.gameObject.SetActive(true);
+    }
+
+    public void HideWithdrawPanel()
+    {
+        withdrawPanel.SetActive(false);
+        withdrawBackButton.gameObject.SetActive(false);
+        noWithdrawButton.gameObject.SetActive(false);
+    }
+
+    public void UpdateWithdrawPanel(string player, string withdrawType)
+    {
+        Legend[] comingInLegends = FieldManager.instance.GetWithdrawLegends(player);
+        Legend[] goingOutLegends = { null };
+        if (withdrawType == Constants.WITHDRAW_SPT)
+        {
+            goingOutLegends = FieldManager.instance.GetSupportLegends(player);
+        }
+        else if (withdrawType == Constants.WITHDRAW_ACT)
+        {
+            goingOutLegends[0] = FieldManager.instance.LegendAt(player, LegendsOfAsaseEnums.FieldPosition.Active);
+        }
+
+        for (int i = 0; i < withdrawOutOptions.Length; i++)
+        {
+            if (i + 1 > goingOutLegends.Length)
+            {
+                withdrawOutOptions[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                withdrawOutOptionTexts[i].text = goingOutLegends[i].GetShortName();
+                withdrawOutOptions[i].gameObject.SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < withdrawInOptions.Length; i++)
+        {
+            if (i + 1 > comingInLegends.Length)
+            {
+                withdrawInOptions[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                withdrawInOptionTexts[i].text = comingInLegends[i].GetShortName();
+                withdrawInOptions[i].gameObject.SetActive(true);
+            }
+        }
+
+    }
+
     #endregion
 }

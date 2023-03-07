@@ -37,6 +37,7 @@ public class InitGameState : GameState
     {
         yield return null;
         FieldManager.instance.CreateTestPlaycards();
+        yield return new WaitForSeconds(2);
         owner.ChangeState<SelectActionStepState>();
     }
 }

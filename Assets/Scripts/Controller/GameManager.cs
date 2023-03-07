@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     {
         if (context.performed)
         {
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend.AddEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.Active).AddEquipMod<Power>(1);
         }
     }
 
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         if (context.performed)
         {
             //FieldManager.instance.AddFieldMod<Speed>(Constants.PLAYER_2, 1);
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportLeft].legend.AddEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.SupportLeft).AddEquipMod<Power>(1);
         }
     }
 
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     {
         if (context.performed)
         {
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportRight].legend.AddEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.SupportRight).AddEquipMod<Power>(1);
         }
     }
 
@@ -96,9 +96,9 @@ public class GameManager : MonoBehaviour
     {
         if (context.performed)
         {
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.Active].legend.UseEquipMod<Power>(1);
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportLeft].legend.UseEquipMod<Power>(1);
-            FieldManager.instance.playcards[Constants.PLAYER_1][FieldPosition.SupportRight].legend.UseEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.Active).UseEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.SupportLeft).UseEquipMod<Power>(1);
+            FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.SupportRight).UseEquipMod<Power>(1);
         }
     }
 }

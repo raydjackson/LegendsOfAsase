@@ -27,10 +27,10 @@ public class ActionManager : MonoBehaviourPunCallbacks
             case Constants.ATTACK:
                 if (player == Constants.PLAYER_1 || player == Constants.PLAYER_2)
                 {
-                    AttackAction atkAction = new AttackAction(FieldManager.instance.playcards[player][FieldPosition.Active].legend, ElementChart.instance.elementDatabase[actionOption]);
+                    AttackAction atkAction = new AttackAction(FieldManager.instance.LegendAt(player, FieldPosition.Active), ElementChart.instance.elementDatabase[actionOption]);
                     actions.Add(atkAction);
                     Debug.Log($"{player}'s active legend will {atkAction.actionType} with the {atkAction.attackElement.ElementName} element");
-                    atkAction.ExecuteFirst(FieldManager.instance.playcards[Constants.OppositePlayer(player)][FieldPosition.Active].legend);
+                    atkAction.ExecuteFirst(FieldManager.instance.LegendAt(Constants.OppositePlayer(player), FieldPosition.Active));
                 }
                 break;
             case Constants.SWITCH:

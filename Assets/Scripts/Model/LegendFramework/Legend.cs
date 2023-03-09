@@ -12,14 +12,22 @@ public class Legend : MonoBehaviour
     protected int speed = 0;
     protected Health legendHealth;
     //Personnel
-    //Effect/Ability
+    public Technique legendTech;
     public List<EquipMod> equipMods = new List<EquipMod>();
+    [SerializeField]
+    protected GameObject technique;
 
     private void Start()
     {
         if (legendHealth != null)
         {
             legendHealth.InitializeHealth(this);
+        }
+
+        if (legendTech == null)
+        {
+            legendTech = Instantiate(technique, gameObject.transform).GetComponent<Technique>();
+            legendTech.owner = this;
         }
 
     }

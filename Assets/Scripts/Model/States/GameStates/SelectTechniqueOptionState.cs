@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using LegendsOfAsaseEnums;
 
 public class SelectTechniqueOptionState : GameState
 {
@@ -8,7 +10,16 @@ public class SelectTechniqueOptionState : GameState
     {
         PanelManager.instance.attackPanel.SetActive(false);
         PanelManager.instance.switchPanel.SetActive(false);
-        //Update Technique Panel
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PanelManager.instance.UpdateTechniquePanel(FieldManager.instance.LegendAt(Constants.PLAYER_1, FieldPosition.Active));
+        }
+        else
+        {
+            PanelManager.instance.UpdateTechniquePanel(FieldManager.instance.LegendAt(Constants.PLAYER_2, FieldPosition.Active));
+        }
+
         PanelManager.instance.ShowTechniqueOptionPanel();
         base.Enter();
     }
@@ -45,6 +56,13 @@ public class SelectTechniqueOptionState : GameState
 
     public void UseTechniqueOption(string techniqueOption)
     {
-        Debug.Log("Using Technique " + techniqueOption);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            ActionManager.instance.CreateAction(Constants.TECHNIQUE, techniqueOption, Constants.PLAYER_1);
+        }
+        else
+        {
+            ActionManager.instance.CreateAction(Constants.TECHNIQUE, techniqueOption, Constants.PLAYER_2);
+        }
     }
 }

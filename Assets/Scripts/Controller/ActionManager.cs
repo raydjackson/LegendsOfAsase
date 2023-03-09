@@ -42,6 +42,16 @@ public class ActionManager : MonoBehaviourPunCallbacks
                     switchAction.ExecuteSecond(null);
                 }
                 break;
+            case Constants.TECHNIQUE:
+                if (player == Constants.PLAYER_1 || player == Constants.PLAYER_2)
+                {
+                    TechniqueAction techniqueAction = new TechniqueAction(FieldManager.instance.LegendAt(player, FieldPosition.Active), actionOption);
+                    actions.Add(techniqueAction);
+                    Debug.Log($"{player}'s active legend will {techniqueAction.actionType} to the {techniqueAction.techniqueOption}");
+                    techniqueAction.ExecuteFirst(FieldManager.instance.LegendAt(Constants.OppositePlayer(player), FieldPosition.Active));
+                    techniqueAction.ExecuteSecond(FieldManager.instance.LegendAt(Constants.OppositePlayer(player), FieldPosition.Active));
+                }
+                break;
             default:
                 break;
         }

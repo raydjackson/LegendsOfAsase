@@ -37,6 +37,8 @@ public class PanelManager : MonoBehaviour
     public Image[] techniqueOptionIcons;
     public TMP_Text[] techniqueOptionTexts;
     public Button techniqueBackButton;
+    private Sprite defTechIcon;
+    private Color defTechColor;
 
     [Header("Withdraw Panel")]
     public GameObject withdrawPanel;
@@ -51,6 +53,7 @@ public class PanelManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        DefaultTechniqueIcon(techniqueOptionIcons[0]);
     }
 
     #region Action Panel Methods
@@ -129,6 +132,50 @@ public class PanelManager : MonoBehaviour
     {
         techniqueOptionsPanel.SetActive(false);
         techniqueBackButton.gameObject.SetActive(false);
+    }
+
+    private void DefaultTechniqueIcon(Image icon)
+    {
+        defTechIcon = icon.sprite;
+        defTechColor = icon.color;
+    }
+
+    public void UpdateTechniquePanel(Legend activeLegend)
+    {
+        string[] techOptions = activeLegend.legendTech.GetTechOptions();
+
+        for (int i = 0; i < techniqueOptions.Length; i++)
+        {
+            if (i == 1 && techniqueOptions.Length > techOptions.Length)
+            {
+                techniqueOptions[i].gameObject.SetActive(false);
+                continue;
+            }
+            else
+            {
+                techniqueOptions[i].gameObject.SetActive(true);
+                if (ElementChart.instance.elementDatabase.ContainsKey(techOptions[i]))
+                {
+                    Element ele = ElementChart.instance.elementDatabase[techOptions[i]];
+                    techniqueOptionIcons[i].sprite = ele.ElementIcon;
+                    techniqueOptionIcons[i].color = ele.ElementColor;
+                    techniqueOptionTexts[i].text = techOptions[i];
+                }
+                else
+                {
+                    techniqueOptionIcons[i].sprite = defTechIcon;
+                    techniqueOptionIcons[i].color = defTechColor;
+                    if (techOptions[i] == Constants.TECHOPT_NONE)
+                    {
+                        techniqueOptionTexts[i].text = activeLegend.legendTech.techniqueName;
+                    }
+                    else
+                    {
+                        techniqueOptionTexts[i].text = techOptions[i];
+                    }
+                }
+            }
+        }
     }
     #endregion
 

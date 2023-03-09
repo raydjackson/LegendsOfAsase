@@ -10,7 +10,7 @@ public class ActivePlaycard : Playcard
     protected override void SetFields()
     {
         SetSpeed();
-        //technique name
+        SetTechniqueName();
         base.SetFields();
     }
 
@@ -22,5 +22,10 @@ public class ActivePlaycard : Playcard
     protected void SetSpeed()
     {
         speed.text = $"Speed: {legend.GetSpeed()}";
+    }
+
+    protected void SetTechniqueName()
+    {
+        techniqueName.text = legend.legendTech.techniqueName;
     }
 }

@@ -21,6 +21,8 @@ public static class Constants
     public const string FIELD_WDTWO = "FieldPositionWithdrawTwo";
     public const string FIELD_WDTHREE = "FieldPositionWithdrawThree";
 
+    public const string TECHOPT_NONE = "No Tech Options";
+
     public static string OppositePlayer(string player)
     {
         if (player == PLAYER_1)

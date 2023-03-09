@@ -50,6 +50,9 @@ MonoBehaviour:
   - {fileID: 2760340808501925602, guid: 7891079f2ac5cd140a1136c98676f1d6, type: 3}
   - {fileID: 8356650487643291272, guid: 9c24ae79e94b74e4c9b833acaf620f7e, type: 3}
   speed: 3
+  legendTech: {fileID: 0}
+  equipMods: []
+  technique: {fileID: 3054950448636478581, guid: 2adc35659056b1f49805ec409128f555, type: 3}
 --- !u!114 &2980300423806676272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,5 +65,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e747b9505f647074789c2352956adf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 0}
   currentHealth: 5
   maximumHealth: 5

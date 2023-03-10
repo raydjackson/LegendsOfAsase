@@ -36,7 +36,10 @@ public class InitGameState : GameState
     IEnumerator Init()
     {
         yield return null;
-        FieldManager.instance.CreateTestPlaycards();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            FieldManager.instance.CreateTestPlaycards();
+        }
         yield return new WaitForSeconds(2);
         owner.ChangeState<SelectActionStepState>();
     }

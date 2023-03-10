@@ -11,15 +11,15 @@ public class CreateShield : TechPart
         base.Start();
     }
 
-    public override void Activate(Legend owner, Legend target, string techOption)
+    public override void ActivatePart(Legend owner, Legend target, string techOption)
     {
-        base.Activate(owner, target, techOption);
+        base.ActivatePart(owner, target, techOption);
         Debug.Log($"{owner.GetShortName()} uses {modAmount} {partName} at {target.GetShortName()}");
         target.AddEquipMod<Shield>(modAmount);
     }
 
-    public override void ActivateOnConfirm(Legend owner, Legend target, string techOption)
+    public override void ActivatePartAfterConfirm(Legend owner, Legend target, string techOption)
     {
-        Activate(owner, target, techOption);
+        ActivatePart(owner, target, techOption);
     }
 }

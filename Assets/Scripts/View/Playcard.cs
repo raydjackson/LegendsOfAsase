@@ -2,8 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using LegendsOfAsaseEnums;
+using Photon.Pun;
 
-public class Playcard : MonoBehaviour
+public class Playcard : MonoBehaviourPunCallbacks
 {
     public TMP_Text legendName;
     public TMP_Text health;

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5817224441743276700}
   - component: {fileID: 5817224441743276703}
   - component: {fileID: 1039048118}
-  - component: {fileID: 6199069405434635505}
   - component: {fileID: 1817578013539499344}
+  - component: {fileID: 3435702548838631727}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,9 +50,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   example: {fileID: 1220222684450881408, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
   availableLegends:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3418669914528406372, guid: 2d0b7ef06e7ab3b4288948432796f287, type: 3}
+  - {fileID: 3418669914528406372, guid: c86781ab29c2aef4288f45467b46ac3b, type: 3}
+  - {fileID: 9015990201992175949, guid: f86eae5ac788d3645a551407427003d9, type: 3}
+  - {fileID: 8398023404448039724, guid: 62fed50a03cfbd049ac48507d364538c, type: 3}
   selectedPlaycard: {fileID: 0}
   fieldLayer:
     serializedVersion: 2
@@ -91,18 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9548a4f7dc0248a45b3806b4545ec824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6199069405434635505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5817224441743276702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb58d5229acd3648ba09775c10ec0cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1817578013539499344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,11 +118,35 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0d73f43b-0c16-4291-ad16-0f07f16c3e4b
     m_ActionName: Player/Select[/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AddHazardModP1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3840bc81-5c65-476c-aa81-e2c0f542a163
     m_ActionName: Player/PowerMod[/Keyboard/p]
   - m_PersistentCalls:
@@ -177,11 +190,77 @@ MonoBehaviour:
     m_ActionId: 321e719e-7476-40a6-91d2-c536d2a31d8d
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AddHazardModP2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 56368bb7-1ae2-4c45-88c5-ccb403b134fe
-    m_ActionName: Player/Test2[/Keyboard/o]
+    m_ActionName: Player/RemovePowerMod[/Keyboard/o]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: UseHazardMods
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d085afd9-47ce-4a68-b1c3-dbc12668c591
+    m_ActionName: Player/Test3[/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5817224441743276700}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f1df67b1-405e-4d9e-8b7d-c4a1367d0463
+    m_ActionName: Player/Test4[/Keyboard/k]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3435702548838631727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817224441743276702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

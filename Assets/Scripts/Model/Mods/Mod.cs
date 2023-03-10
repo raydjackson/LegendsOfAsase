@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LegendsOfAsaseEnums;
+using Photon.Pun;
 
-public class Mod : MonoBehaviour
+public class Mod : MonoBehaviourPunCallbacks
 {
     public int count = 0;
     public ModType modType;

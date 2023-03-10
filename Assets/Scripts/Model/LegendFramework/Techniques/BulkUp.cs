@@ -16,7 +16,7 @@ public class BulkUp : Technique
     {
         if (tpIndex < techParts.Length)
         {
-            techParts[tpIndex].Activate(owner, owner, techOption);
+            techParts[tpIndex].ActivatePart(owner, owner, techOption);
         }
         else
         {

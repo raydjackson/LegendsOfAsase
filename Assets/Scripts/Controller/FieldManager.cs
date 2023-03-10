@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using LegendsOfAsaseEnums;
 using TMPro;
+using Photon.Pun;
 
-public class FieldManager : MonoBehaviour
+public class FieldManager : MonoBehaviourPunCallbacks
 {
     public static FieldManager instance { get; private set; }
 
@@ -106,18 +107,20 @@ public class FieldManager : MonoBehaviour
         Dictionary<FieldPosition, Playcard> p1Playcards = new Dictionary<FieldPosition, Playcard>();
         Dictionary<FieldPosition, Playcard> p2Playcards = new Dictionary<FieldPosition, Playcard>();
 
-        Playcard pC1 = Instantiate(activePlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC2 = Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC3 = Instantiate(basicPlaycard, supportLeftPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC4 = Instantiate(basicPlaycard, supportRightPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC5 = Instantiate(basicPlaycard, withdrawOnePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC6 = Instantiate(basicPlaycard, withdrawTwoPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC7 = Instantiate(basicPlaycard, withdrawThreePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC8 = Instantiate(basicPlaycard, supportLeftPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC9 = Instantiate(basicPlaycard, supportRightPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC10 = Instantiate(basicPlaycard, withdrawOnePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC11 = Instantiate(basicPlaycard, withdrawTwoPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        Playcard pC12 = Instantiate(basicPlaycard, withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC1 = PhotonNetwork.Instantiate("ActivePlaycard", activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        //Instantiate(activePlaycard, activePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC2 = PhotonNetwork.Instantiate("ActivePlaycard", activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        //Instantiate(activePlaycard, activePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC3 = PhotonNetwork.Instantiate("BasicPlaycard", supportLeftPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC4 = PhotonNetwork.Instantiate("BasicPlaycard", supportRightPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC5 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawOnePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC6 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawTwoPlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC7 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawThreePlayerOne.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC8 = PhotonNetwork.Instantiate("BasicPlaycard", supportLeftPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC9 = PhotonNetwork.Instantiate("BasicPlaycard", supportRightPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC10 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawOnePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC11 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawTwoPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
+        Playcard pC12 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         
         pC1.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
         pC2.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());

@@ -335,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206323978123683390}
   - component: {fileID: 206323978123683391}
+  - component: {fileID: 8645279730591381242}
   m_Layer: 0
   m_Name: Game Playarea
   m_TagString: Untagged
@@ -399,6 +400,28 @@ MonoBehaviour:
   shieldMod: {fileID: 6013059060944953941, guid: 413af5cbfe535e14895c614735c79405, type: 3}
   hazardMod: {fileID: 6013059060944953941, guid: 64f1f935ba9a0bb48b6e29fe651aa93e, type: 3}
   speedMod: {fileID: 6013059060944953941, guid: 98174ffc13516bc42806877cf0b3c52e, type: 3}
+--- !u!114 &8645279730591381242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206323978123683389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &206323978162558251
 GameObject:
   m_ObjectHideFlags: 0

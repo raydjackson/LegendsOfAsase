@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3470068263613433007}
   - component: {fileID: 3013521344162683610}
   - component: {fileID: 5243035363327367465}
+  - component: {fileID: -5250235132514700695}
   m_Layer: 0
   m_Name: BulkUp
   m_TagString: Untagged
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partName: CreateShield
-  requiresOptions: 0
   requiresConfirmChoice: 0
   modAmount: 1
 --- !u!114 &3013521344162683610
@@ -63,7 +63,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partName: CreatePower
-  requiresOptions: 0
   requiresConfirmChoice: 0
   modAmount: 1
 --- !u!114 &5243035363327367465
@@ -84,3 +83,25 @@ MonoBehaviour:
   techParts:
   - {fileID: 3470068263613433007}
   - {fileID: 3013521344162683610}
+--- !u!114 &-5250235132514700695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054950448636478581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

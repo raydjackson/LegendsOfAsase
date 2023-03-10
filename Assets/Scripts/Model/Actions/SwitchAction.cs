@@ -6,12 +6,14 @@ public class SwitchAction : IAction
 {
     public string actionType = Constants.SWITCH;
     public string player;
+    public Legend actingLegend;
     public string switchDirection;
 
     public SwitchAction(string player, string switchDir)
     {
         this.player = player;
         switchDirection = switchDir;
+        actingLegend = FieldManager.instance.LegendAt(player, LegendsOfAsaseEnums.FieldPosition.Active);
     }
 
     public void ExecuteFirst(Legend defendingLegend)
@@ -27,5 +29,15 @@ public class SwitchAction : IAction
     public string GetActionType()
     {
         return actionType;
+    }
+
+    public int GetSpeed()
+    {
+        return 0;
+    }
+
+    public string GetActingLegendName()
+    {
+        return actingLegend.GetShortName();
     }
 }

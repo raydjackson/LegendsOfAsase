@@ -12,12 +12,12 @@ public abstract class TechPart : MonoBehaviour
 
     }
 
-    public virtual void Activate(Legend owner, Legend target, string techOption)
+    public virtual void ActivatePart(Legend owner, Legend target, string techOption)
     {
 
     }
 
-    public virtual void ActivateOnConfirm(Legend owner, Legend target, string techOption)
+    public virtual void ActivatePartAfterConfirm(Legend owner, Legend target, string techOption)
     {
 
     }

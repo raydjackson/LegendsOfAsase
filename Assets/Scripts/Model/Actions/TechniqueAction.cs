@@ -28,4 +28,14 @@ public class TechniqueAction : IAction
     {
         return actionType;
     }
+
+    public int GetSpeed()
+    {
+        return actingLegend.GetSpeed();
+    }
+
+    public string GetActingLegendName()
+    {
+        return actingLegend.GetShortName();
+    }
 }

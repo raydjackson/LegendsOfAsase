@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public abstract class Technique : MonoBehaviour
+public abstract class Technique : MonoBehaviourPunCallbacks
 {
     public Legend owner;
     public string techniqueName;
@@ -14,7 +15,7 @@ public abstract class Technique : MonoBehaviour
     {
         if (tpIndex < techParts.Length)
         {
-            techParts[tpIndex].Activate(owner, target, techOption);
+            techParts[tpIndex].ActivatePart(owner, target, techOption);
         }
         else
         {
@@ -26,7 +27,7 @@ public abstract class Technique : MonoBehaviour
     {
         if (tpIndex < techParts.Length)
         {
-            techParts[tpIndex].ActivateOnConfirm(owner, target, techOption);
+            techParts[tpIndex].ActivatePartAfterConfirm(owner, target, techOption);
         }
     }
 

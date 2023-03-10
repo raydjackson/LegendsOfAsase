@@ -1,6 +1,7 @@
 using UnityEngine;
+using Photon.Pun;
 
-public class Element : MonoBehaviour
+public class Element : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     protected Element[] weaknesses;

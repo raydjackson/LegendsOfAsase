@@ -31,4 +31,14 @@ public class AttackAction : IAction
     {
         return actionType;
     }
+
+    public int GetSpeed()
+    {
+        return attackingLegend.GetSpeed();
+    }
+
+    public string GetActingLegendName()
+    {
+        return attackingLegend.GetShortName();
+    }
 }

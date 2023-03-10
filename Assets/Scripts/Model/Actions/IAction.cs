@@ -8,4 +8,8 @@ public interface IAction
     public void ExecuteFirst(Legend defendingLegend);
 
     public void ExecuteSecond(Legend defendingLegend);
+
+    public int GetSpeed();
+
+    public string GetActingLegendName();
 }

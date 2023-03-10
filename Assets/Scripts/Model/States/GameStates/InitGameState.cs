@@ -9,13 +9,12 @@ public class InitGameState : GameState
     public override void Enter()
     {
         base.Enter();
-        NetworkManager.instance.Connect();
     }
 
     protected override void Update()
     {
         base.Update();
-        if (!gameStarted && PhotonNetwork.InRoom)
+        if (!gameStarted)
         {
             //TO DO: move gameStarted bool to GameManager
             gameStarted = true;

@@ -13,6 +13,6 @@ public class GameStateMachine : StateMachine
 
     private void Start()
     {
-        ChangeState<InitGameState>();
+        ChangeState<ConnectState>();
     }
 }

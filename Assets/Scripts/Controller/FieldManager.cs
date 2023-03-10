@@ -121,19 +121,19 @@ public class FieldManager : MonoBehaviourPunCallbacks
         Playcard pC10 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawOnePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC11 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawTwoPlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
         Playcard pC12 = PhotonNetwork.Instantiate("BasicPlaycard", withdrawThreePlayerTwo.position, Quaternion.identity).GetComponent<Playcard>();
-        
-        pC1.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
-        pC2.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
-        pC3.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
-        pC4.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
-        pC5.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
-        pC6.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
-        pC7.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
-        pC8.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
-        pC9.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
-        pC10.SetLegend(Instantiate(GameManager.instance.availableLegends[0]).GetComponent<Legend>());
-        pC11.SetLegend(Instantiate(GameManager.instance.availableLegends[1]).GetComponent<Legend>());
-        pC12.SetLegend(Instantiate(GameManager.instance.availableLegends[2]).GetComponent<Legend>());
+
+        pC1.SetLegend(PhotonNetwork.Instantiate("Arrik", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC2.SetLegend(PhotonNetwork.Instantiate("Grimoire", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC3.SetLegend(PhotonNetwork.Instantiate("Denzion", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC4.SetLegend(PhotonNetwork.Instantiate("Grimoire", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC5.SetLegend(PhotonNetwork.Instantiate("Arrik", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC6.SetLegend(PhotonNetwork.Instantiate("Denzion", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC7.SetLegend(PhotonNetwork.Instantiate("Grimoire", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC8.SetLegend(PhotonNetwork.Instantiate("Arrik", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC9.SetLegend(PhotonNetwork.Instantiate("Denzion", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC10.SetLegend(PhotonNetwork.Instantiate("Arrik", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC11.SetLegend(PhotonNetwork.Instantiate("Denzion", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
+        pC12.SetLegend(PhotonNetwork.Instantiate("Grimoire", Vector3.zero, Quaternion.identity).GetComponent<Legend>());
 
         //Player 1 Playcards
         p1Playcards.Add(FieldPosition.Active, pC1);
